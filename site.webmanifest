@@ -1,0 +1,26 @@
+{
+  "name": "Quick TTRPG Manager",
+  "short_name": "TTRPG Manager",
+  "description": "Gestionnaire de campagne pour jeux de rôles",
+  "lang": "fr",
+  "start_url": "/my-site/",
+  "scope": "/my-site/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0e0f13",
+  "background_color": "#0e0f13",
+  "icons": [
+    {
+      "src": "/my-site/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/my-site/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
