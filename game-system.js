@@ -73,7 +73,6 @@ function renderCharSheet(data) {
   // Caractéristiques
   const attrsHtml = ABILITY_KEYS.map((k, i) => {
     const val = Number(abilities[k]) || 0;
-    const die = abilityDie(val);
     return `<div class="preview-attr" style="text-align:center">
       <div class="lbl" style="font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);margin-bottom:6px">${ABILITY_LABELS()[i]}</div>
       <div class="val" style="font-family:var(--font-mono);font-size:28px;font-weight:700;line-height:1;color:var(--accent)">${val}</div>
