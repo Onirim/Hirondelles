@@ -125,7 +125,6 @@ function renderAbilities() {
         <button onclick="changeAbility('${k}', -1, event)">−</button>
         <div class="attr-val" id="ability-${k}">${val}</div>
         <button onclick="changeAbility('${k}', 1, event)">+</button>
-        <span class="attr-cost" style="min-width:28px;text-align:right">${abilityDie(val)}</span>
       </div>
     </div>`;
   }).join('');
