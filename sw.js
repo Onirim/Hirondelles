@@ -6,24 +6,24 @@
 //   - Images Supabase → Network First avec fallback cache
 // ══════════════════════════════════════════════════════════════
 
-const CACHE_NAME = 'fanal-noir-v7';
+const CACHE_NAME = 'hirondelles-v7';
 
 // Assets mis en cache dès l'installation
 const PRECACHE_ASSETS = [
-  '/site-name/',
-  '/site-name/index.html',
-  '/site-name/styles.css',
-  '/site-name/chronicles.css',
-  '/site-name/documents.css',
-  '/site-name/campaigns.css',
-  '/site-name/i18n.js',
-  '/site-name/supabase-client.js',
-  '/site-name/scripts.js',
-  '/site-name/editor.js',
-  '/site-name/chronicles.js',
-  '/site-name/documents.js',
-  '/site-name/campaigns.js',
-  '/site-name/tags.js',
+  '/hirondelles/',
+  '/hirondelles/index.html',
+  '/hirondelles/styles.css',
+  '/hirondelles/chronicles.css',
+  '/hirondelles/documents.css',
+  '/hirondelles/campaigns.css',
+  '/hirondelles/i18n.js',
+  '/hirondelles/supabase-client.js',
+  '/hirondelles/scripts.js',
+  '/hirondelles/editor.js',
+  '/hirondelles/chronicles.js',
+  '/hirondelles/documents.js',
+  '/hirondelles/campaigns.js',
+  '/hirondelles/tags.js',
 ];
 
 // ── Installation : pré-cache des assets statiques ─────────────
