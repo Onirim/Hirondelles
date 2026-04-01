@@ -41,15 +41,6 @@ function abilitySpent(state) {
   return ABILITY_KEYS.reduce((sum, k) => sum + (Number(state.abilities?.[k]) || 0), 0);
 }
 
-// Bonus de dé associé à une caractéristique (optionnel, pour affichage)
-function abilityDie(val) {
-  if (val <= 0)  return 'd4';
-  if (val <= 3)  return 'd6';
-  if (val <= 6)  return 'd8';
-  if (val <= 9)  return 'd10';
-  if (val <= 12) return 'd12';
-  return 'd20';
-}
 
 // ── Rendu carte roster ────────────────────────────────────────
 function renderCharCardBody(c) {
@@ -86,7 +77,6 @@ function renderCharSheet(data) {
     return `<div class="preview-attr" style="text-align:center">
       <div class="lbl" style="font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);margin-bottom:6px">${ABILITY_LABELS()[i]}</div>
       <div class="val" style="font-family:var(--font-mono);font-size:28px;font-weight:700;line-height:1;color:var(--accent)">${val}</div>
-      <div style="font-family:var(--font-mono);font-size:10px;color:var(--text3);margin-top:4px">${die}</div>
     </div>`;
   }).join('');
 
