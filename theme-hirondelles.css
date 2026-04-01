@@ -80,6 +80,28 @@ html, body {
   line-height: 1.6;
 }
 
+.with-bg {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  isolation: isolate; /* garde l'empilement propre */
+}
+
+.with-bg::before {
+  content: "";
+  position: fixed;      /* fond sur tout l'écran */
+  inset: 0;
+  z-index: -1;
+
+  background-image: url("/pictures/fond.svg");
+  background-repeat: no-repeat;
+  background-position: center center; /* centré */
+  background-size: cover;             /* mise à l'échelle */
+  /* alternatives: contain / 100% auto */
+
+  opacity: 0.25; /* alpha/transparence */
+}
+
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg2); }
 ::-webkit-scrollbar-thumb {
