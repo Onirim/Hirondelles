@@ -7,14 +7,14 @@ Les mercenaires sont principalement définis par leurs caractéristiques, leurs 
 
 ## Caractéristiques
 Pour créer un personnage, attribuez trois points de bonus aux caractéristiques du personnage, réparties comme vous le désirez.
-| Caractéristique | Usages principaux |
-| --- | --- |
-| Force | Corps-à-corps, bonus aux dégâts |
-| Dextérité | Armes à distance, défense |
-| Constitution | Points de vie, inventaire |
-| Intelligence | Magie profane |
-| Sagesse | Magie divine |
-| Charisme | Bonus d'expérience |
+| Caractéristique | Usages principaux | Ex. d'usages secondaires |
+| --- | --- | --- |
+| Force | Corps-à-corps, bonus aux dégâts | Faits de force, escalade |
+| Dextérité | Armes à distance, défense | Mécanismes, coordination |
+| Constitution | Points de vie, inventaire | Endurance, natation |
+| Intelligence | Magie profane | Connaissances, lecture et écriture |
+| Sagesse | Magie divine | Perceptions, volonté |
+| Charisme | Bonus d'expérience | Séduction, baratinage |
 
 ## Rangs & niveaux
 On peut considérer le rang d'un personnage comme son niveau de compétence en tant que mercenaire ou soldat. Chaque nouveau mercenaire commence au rang 1. Les guildes et compagnies de mercenaires représentent généralement le rang de leurs mercenaires sur les insignes et il est considéré comme extrêmement déshonorant de s'attribuer un rang qui n'est pas le sien. Chaque passage à un nouveau rang est dignement fêté au sein des compagnies.
@@ -29,8 +29,8 @@ Les points de vie représentent la capacité du personnage à transformer une bl
 Pour calculer les points de vie d'un personnage, la formule est la suivante :
 > Rang x (4 + Constitution) + 4
 
-Un personnage civil n'a pas de rang, il est donc de niveau 0 et possède 1d6 points de vie.
-Les PNJ avec un niveau possèdent 1d8 points de vie par niveau.
+Les PNJs civils n'ont pas de rang, il sont donc de niveau 0 et possèdent 1d6 points de vie.
+Les PNJs ayant un niveau possèdent 1d8 points de vie par niveau.
 Lorsqu'un personnage perd son dernier point de vie, il est mis hors de combat, les dégâts supplémentaires sont transformés en blessures.
 
 ### Blessures
@@ -41,12 +41,19 @@ La défense d'un personnage dépend à la fois de sa dextérité et des élémen
 Sans armure, la difficulté pour toucher un personnage est de 10 + Dextérité, ce qui représente sa défense naturelle.
 Avec armure, la difficulté pour toucher devient 10 + protection. Le joueur est libre de choisir le meilleur score à utiliser.
 Dans le cas d'une attaque surprise ou par l'arrière ou face à des projectiles rapides, il n'est pas possible d'utiliser la défense.
-| Protections |
-| --- |
-| Casque |
-| Gambison |
-| Chemise de mailles |
-| Plastron de plates |
-| Brassards |
-| Grèves (jambières) |
-| Bouclier |
+| Protections | Emplacements/Protection |
+| --- | --- |
+| Casque | 1 |
+| Gambison | 1 |
+| Chemise de mailles | 1 |
+| Plastron de plates | 1 |
+| Brassards | 1 |
+| Grèves (jambières) | 1 |
+| Bouclier | 1 |
+| Grand bouclier (double) | 2 |
+
+## Spécialités
+Chaque personnage possède une ou plusieurs spécialités qui leur apportent un bonus de +5 lorsqu'elle entre en jeu sur un test de caractéristique.
+- Un personnage doit choisir la spécialité correspondant au métier de ses parents.
+- Il doit ensuite choisir la spécialité correspondante au métier pour lequel il a été formé à l'adolescence.
+Un personnage pourra acquérir une nouvelle spécialité au cours du jeu, le nombre maximum de ses spécialités ne pouvant excéder son rang +1.
