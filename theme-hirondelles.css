@@ -114,7 +114,7 @@ a:hover { color: #5bbdaa; }
   font-family: 'Cormorant SC', Georgia, serif;
   font-size: 19px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  /*letter-spacing: 0.08em;*/
   color: var(--accent);
   font-style: normal;
 }
@@ -129,9 +129,9 @@ a:hover { color: #5bbdaa; }
 /* Boutons nav — Spectral, pas d'italique */
 #topbar nav button {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  /*letter-spacing: 0.04em;*/
   color: var(--text3);
   border-radius: 0;
   transition: all 0.2s;
