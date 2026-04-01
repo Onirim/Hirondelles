@@ -6,7 +6,7 @@
 //   - Images Supabase → Network First avec fallback cache
 // ══════════════════════════════════════════════════════════════
 
-const CACHE_NAME = 'Hirondelles-v14';
+const CACHE_NAME = 'Hirondelles-v15';
 
 // Assets mis en cache dès l'installation
 const PRECACHE_ASSETS = [
