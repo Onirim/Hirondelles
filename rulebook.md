@@ -21,11 +21,15 @@ Les personnages joueurs (PJ) possèdent six attributs avec des scores notés de 
 - **Finitions** : Nommez et décrivez votre personnage.
 
 ## Emplacements d'objet et blessures
-- **Emplacements** : Les PJ ont 10 + CON emplacements pour enregistrer leur équipement. La plupart des objets, y compris les groupes de petits objets pouvant tenir dans une main, occupent un emplacement. Les objets à deux mains occupent deux emplacements. 500 pièces utilisent un emplacement complet.
-- **Dégâts** : Les dégâts reçus par un PJ sont soustraits de ses PV. Une fois ses PV à 0, chaque point de dégâts remplit un emplacement d'objet d'une blessure appropriée (poignardé, gelé, brûlé, etc.), de l'emplacement le plus bas au plus élevé, qui ne peut plus être utilisé tant que la blessure n'est pas soignée.
-- **Dégâts directs** : Les dégâts directs contournent les PV et ajoutent directement des blessures. Cela se produit dans des situations où les compétences de combat d'une créature ne pourraient pas la protéger (par exemple, en tombant ou en étant attaqué à l'improviste). Les monstres reçoivent le triple de dégâts des dégâts directs, puisqu'ils n'ont pas d'emplacements d'objets.
-- **Mort** : Les PJ meurent lorsque tous leurs emplacements sont remplis de blessures. Les créatures sans emplacements, comme les monstres, meurent simplement à 0 PV.
-- **Soins** : Les PV des PJ reviennent au maximum chaque matin, à condition qu'ils aient dormi deux gardes et mangé un repas la veille. S'ils sont dans un refuge sûr, ils guérissent également une blessure.
+**Emplacements** : Les PJ ont 10 + CON emplacements pour enregistrer leur équipement. La plupart des objets, y compris les groupes de petits objets pouvant tenir dans une main, occupent un emplacement. Les objets à deux mains occupent deux emplacements. 500 pièces utilisent un emplacement complet.
+
+**Dégâts** : Les dégâts reçus par un PJ sont soustraits de ses PV. Une fois ses PV à 0, chaque point de dégâts remplit un emplacement d'objet d'une blessure appropriée (poignardé, gelé, brûlé, etc.), de l'emplacement le plus bas au plus élevé, qui ne peut plus être utilisé tant que la blessure n'est pas soignée.
+
+**Dégâts directs** : Les dégâts directs contournent les PV et ajoutent directement des blessures. Cela se produit dans des situations où les compétences de combat d'une créature ne pourraient pas la protéger (par exemple, en tombant ou en étant attaqué à l'improviste). Les monstres reçoivent le triple de dégâts des dégâts directs, puisqu'ils n'ont pas d'emplacements d'objets.
+
+**Mort** : Les PJ meurent lorsque tous leurs emplacements sont remplis de blessures. Les créatures sans emplacements, comme les monstres, meurent simplement à 0 PV.
+
+**Soins** : Les PV des PJ reviennent au maximum chaque matin, à condition qu'ils aient dormi deux gardes et mangé un repas la veille. S'ils sont dans un refuge sûr, ils guérissent également une blessure.
 
 ## Montée de Niveau
 - **Points d'expérience** : Les PJ reçoivent des points d'expérience en fonction de la difficulté de la mission entreprise et de sa réussite.
@@ -59,3 +63,29 @@ Lorsqu'une créature tente quelque chose de risqué, elle effectue un test en la
 **Tests de connaissances** : Les tests ne sont pas nécessaires pour qu'un PJ se souvienne de connaissances. Les PJ connaissent automatiquement toutes les connaissances communes et toute connaissance spécialisée couverte par leurs métiers. Toute autre connaissance doit être découverte en jeu.
 
 **Tests de fouille** : Les éléments cachés sont soit découverts automatiquement après suffisamment de temps passé à chercher (généralement dix minutes pour une salle ou une 4 heures pour un hexagone de 6km de large), soit ils ne peuvent pas être trouvés sans actions en jeu. Les caractéristiques évidentes d'une zone devraient être décrites immédiatement aux PJ, et les détails devraient être décrits au fur et à mesure que les joueurs posent des questions et enquêtent.
+
+## Rencontres
+
+Utilisez les règles suivantes lorsque les PJ subissent une rencontre aléatoire.
+
+**Distance par rapport au groupe** : Dans les environnements confinés avec une visibilité limitée comme en ville ou dans des donjons, les rencontres apparaissent à 2d6 × 3 mètres des PJ lorsque leur distance initiale est incertaine. Dans la nature, les grandes cavernes, ou autres espaces ouverts, elles apparaissent à 4d6 × 10 mètres de distance.
+
+**Surprise** : Si une rencontre se produit à moins de 25 mètres du groupe, le PJ le plus proche effectue un test de WIS contre le WIS de la créature rencontrée la plus proche. Si un côté gagne par 5 ou plus, il a surpris l'autre côté. Le côté qui surprend agit en premier au combat et gagne un bonus de +5 sur tous les jets de combat pendant le premier round.
+
+**Activité** : L'activité actuelle des créatures rencontrées dépend du type de créature, de l'environnement, etc., mais le plus important est de les faire faire plus que simplement attendre l'arrivée des PJ. Cela devrait donner l'impression qu'elles ont une vie en dehors de l'aventure.
+
+**Réaction** : Si la réaction de la rencontre envers le groupe n'est pas évidente, le MJ peut lancer 2d6 sur le tableau suivant pour déterminer leur attitude. Notez que les actions des PJ peuvent faire changer cela rapidement.
+
+| 2d6 |	Réaction du PNJ |
+| --- | --- |
+| 2 |	Tuer les PJ |
+| 3	| Blesser ou capturer les PJ |
+| 4	| Harceler ou voler les PJ |
+| 5	| Insulter, menacer ou forcer les PJ |
+| 6	| Éviter les PJ |
+| 7	| Ignorer les PJ |
+| 8	| Suivre ou observer les PJ |
+| 9	| Saluer ou questionner les PJ |
+| 10 | Partager des informations avec les PJ |
+| 11	| Accomplir de petits services pour les PJ |
+| 12	| Demander à rejoindre le groupe des PJ |
