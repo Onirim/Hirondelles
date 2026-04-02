@@ -266,9 +266,9 @@ Si vous souhaitez déterminer les résultats d'une bataille, mais que la jouer a
 
 **Unités** : Déterminez la taille moyenne des unités à considérer dans votre campagne. Par exemple on peut considérer en tant qu'unité 20 miliciens peu entraînés, 15 archers ou 10 soldats entraînés. Chaque unité ainsi définie possède la même puissance de combat.
 
-1. **Calculer la puissance de combat** : Additionnez la puissance de combat des unités de chaque camp. À la discrétion du MJ, améliorez ou réduisez la puissance de combat d'un camp de jusqu'à 50 % en fonction de son moral et de son positionnement. Le leader de chaque camp peut également effectuer un jet de CHA pour tenter d'améliorer la puissance de son camp de 50 % en prononçant un discours enflammé. L'important n'est pas les chiffres exacts mais la force relative de chaque camp par rapport à l'autre.
+**Calculer la puissance de combat** : Additionnez la puissance de combat des unités de chaque camp. À la discrétion du MJ, améliorez ou réduisez la puissance de combat d'un camp de jusqu'à 50 % en fonction de son moral et de son positionnement. Le leader de chaque camp peut également effectuer un jet de CHA pour tenter d'améliorer la puissance de son camp de 50 % en prononçant un discours enflammé. L'important n'est pas les chiffres exacts mais la force relative de chaque camp par rapport à l'autre.
 
-2. **Établir le bonus** : Déterminez de combien le camp le plus fort est supérieur au camp le plus faible. Cela fournit le bonus que le camp le plus fort utilisera lors des prochains jets de bataille.
+**Établir le bonus** : Déterminez de combien le camp le plus fort est supérieur au camp le plus faible. Cela fournit le bonus que le camp le plus fort utilisera lors des prochains jets de bataille.
 
 | Supériorité |	Bonus |
 | --- | --- |
@@ -278,9 +278,9 @@ Si vous souhaitez déterminer les résultats d'une bataille, mais que la jouer a
 | Jusqu'à 4x plus fort |	+8 |
 |Plus de 4x plus fort |	+10 |
 
-3. **Jets de bataille** : Le camp le plus fort effectue trois jets en utilisant le bonus ci-dessus, visant à obtenir 11 ou mieux.
+**Jets de bataille** : Le camp le plus fort effectue trois jets en utilisant le bonus ci-dessus, visant à obtenir 11 ou mieux.
 
-4. **Choisir les résultats** : Chaque réussite permet au camp le plus fort de choisir secrètement un résultat dans la liste ci-dessous, et chaque échec permet au camp le plus faible de choisir secrètement un résultat. Le même résultat peut être choisi plusieurs fois. Une fois tous les choix effectués, ils sont révélés et résolus.
+**Choisir les résultats** : Chaque réussite permet au camp le plus fort de choisir secrètement un résultat dans la liste ci-dessous, et chaque échec permet au camp le plus faible de choisir secrètement un résultat. Le même résultat peut être choisi plusieurs fois. Une fois tous les choix effectués, ils sont révélés et résolus.
 
 - Capturer : Un PNJ ennemi est capturé.
 - Piller : Un objet ennemi est pillé.
