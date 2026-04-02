@@ -152,3 +152,72 @@ D'un autre côté, un PJ qui s'efforce de rester dans la faveur d'une divinité 
 **Fabrication** : Préparer une potion nécessite un feu, un chaudron, des ingrédients et 4 heures de temps. Le joueur décrit l'effet et la durée de la potion qu'il tente de créer, ainsi que les ingrédients à utiliser (généralement des parties de monstres, mais en théorie n'importe quelle substance rare aux propriétés appropriées pourrait être utilisée). Si le MJ approuve l'effet, le PJ effectue un jet d'INT. Le PJ ajoute +5 au jet s'il passe 4 heures supplémentaire à préparer la potion. En cas de réussite, la potion est créée. Les parties sont perdues quel que soit le résultat. Si le PJ réussit le jet avec une marge de 10 ou plus, il a créé une recette pour cette potion et n'a plus besoin de faire de jet de fabrication pour la produire lorsqu'il utilise exactement les mêmes ingrédients.
 
 **Récolte** : Les plantes magiques peuvent être utilisées pour les potions, mais elles poussent généralement dans des endroits dangereux ou sauvages. La plupart des potions sont fabriquées à partir des organes de monstres qui leur confèrent leurs capacités spéciales, comme un poumon de dragon (crache-feu) ou des écailles de dragon (résistance au feu). Récolter une partie de monstre nécessite un tour de 10 minutes et les outils appropriés. Les parties du corps récoltées ou les plantes occupent au moins un emplacement, en raison de l'emballage et des liquides dans lesquels elles doivent être conservées.
+
+## Équipement
+
+**Monnaie** : Tous les coûts sont exprimés en pièces (c). 10c correspondent au salaire journalier d'un travailleur non qualifié.
+
+| Type d'objet | Détails | Prix |
+| --- | --- | --- |
+| Objets courants | Trouvés dans n'importe quel établissement. Corde, torche, scie, flèche, carquois de 12 flèches, etc. | 5c |
+| Objets peu communs | Trouvés dans les villes ou les cités. Lanterne, piège à ours, etc. | 20c |
+| Objets rares | Trouvés uniquement dans les grandes villes. Sextant, sablier, astrolabe, etc. | 100c+ |
+| Armes à une main | d6 de dégâts, 1 emplacement | 50c |
+| Armes à deux mains | d8 de dégâts, 2 emplacements | 100 |
+| Armes de jet | Une main, 1 emplacement, d6 de dégât, portée efficace 20 mètres | 50c |
+| Frondes | Une main, 1 emplacement, d4 de dégâts, portée efficace 40 mètres | 50c |
+| Arcs | Deux mains, 2 emplacements, d6 de dégâts, portée efficace 80 mètres | 100c |
+
+**Pièces d'armure** : Les PJ peuvent porter jusqu'à 7 pièces. Chaque pièce utilise un emplacement et accorde 1 Point d'Armure (PA) (maximum de 7 PA ou 18 de Classe d'Armure).
+| Pièce d'armure |  Prix |
+| --- | --- | 
+| Bouclier | 100c |
+| Casque | 100c |
+| Gambison | 100c |
+| Haubert | 200c |
+| Plastron | 500c |
+| Brassards | 500c |
+| Jambières | 500c |
+
+| Animaux |  Prix |
+| --- | --- | 
+| Volaille | 5c |
+| Chiens, porcs, chèvres, etc. | 20c |
+| Vaches | 100c |
+| Faucons | 1 000c |
+
+| Ensembles vestimentaires |  Prix |
+| --- | --- | 
+| Pauvre | 60c |
+| Modeste | 120c |
+| Respectable | 240c |
+| Aisé | 600c |
+| Petite noblesse | 2400c |
+| Haute noblesse | 12 000c |
+| Royal | 120 000c |
+
+| Type d'objet | Détails | Prix |
+| --- | --- | --- |
+| Mulet | 50 emplacements | 30c |
+| Cheval de selle | 80 emplacements | 200c |
+| Cheval de guerre | 80 emplacements  | 10 000c |
+| Charrette | 200 emplacements | 50c |
+| Calèche | 200 emplacements | 320c |
+| Chariot | 800 emplacements | 120c |
+| Bateau à rames | 320 emplacements | 500c |
+| Bateau de pêche | 2 000 emplacements, 2 équipiers | 500c |
+| Sloops | 8 000 emplacements, 10 équipiers | 5000c |
+| Caravelle | 40 000 emplacements, 50 équipiers | 25 000c |
+| Galion | 200 000 emplacements, 200 équipiers | 125 000c |
+
+- **Coût de la vie** : Utilisez le tableau ci-dessous pour déterminer le mode de vie d'un PJ entre les aventures. Le coût mensuel d'un niveau social constitue également une bonne référence pour les pots-de-vin et les cadeaux destinés à une personne de cette classe.
+| Coût de la vie (par mois) |	Description |
+| --- | --- |
+| Indigent | Mendiants, Hors-la-loi | 90c |
+| Pauvre | Serviteurs, ouvriers, marins, fermiers, soldats | 300c |
+| Modeste |	Aubergistes, boulangers, artisans, scribes, prêtres, mercenaires | 600c |
+| Respectable |	Médecins, marchands, avocats, maîtres artisans | 1 200c |
+| Aisé |	Courtisans, chevaliers, marchands riches, évêques, noblesse terrienne | 3 000c |
+| Basse noblesse |	Barons, comtes | 12 000c |
+| Haute noblesse | Ducs, princes | 60 000c |
+| Royal |	Rois, empereurs | 600 000c |
