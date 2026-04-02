@@ -10,26 +10,26 @@ Les personnages joueurs (PJ) possèdent six attributs avec des scores notés de 
 - **Charisme (CHA)** : L'attribut du Clerc. Ajouté aux jets de dé nécessitant une force de personnalité comme l'initiative et la persuasion. Les PJ peuvent avoir un nombre de compagnons et bénédictions de patrons égal à leur CHA.
 
 ## Création de personnage
-Sélectionnez les scores d'attributs : Répartissez 3 points entre les attributs de votre PJ. Plus d'un point peut être placé dans le même attribut. Ou, laissez le destin décider en lançant 3d6, chaque dé ajoutant 1 à l'attribut correspondant au numéro qu'il a affiché.
+- **Sélectionnez les scores d'attributs** : Répartissez 3 points entre les attributs de votre PJ. Plus d'un point peut être placé dans le même attribut. Ou, laissez le destin décider en lançant 3d6, chaque dé ajoutant 1 à l'attribut correspondant au numéro qu'il a affiché.
 > Exemple : un lancer de 3-5-5 signifie que CON (le 3ᵉ attribut) est à 1 et WIS (le 5ᵉ attribut) est à 2. Tous les autres attributs ont un score de 0.
 
-- Enregistrer les statistiques secondaires : Les PJ commencent au niveau 1 avec 0 Points d'Expérience. 
-- Ils ont 10 + CON emplacements d'inventaire et commencent avec 1d6 Points de Vie (PV) maximum.
-- Sélectionnez les carrières : Lancez ou choisissez deux métiers.
-- Sélectionnez votre équipement : vous avez 3d6×10 pièces, 2 rations, une corde de 50 pieds, 2 torches, n'importe quelles pièces d'armure ou armes et un carquois de 20 flèches. Si le PJ a des points en INT, il peut recevoir un livre de sorts aléatoire (pp. 22-25) pour chaque point.
-- Armure : Les PJ ont des Points d'Armure (PA) égaux à leur nombre de pièces d'armure et une Classe d'Armure (CA) égale à PA + 11.
-- Finitions : Nommez et décrivez votre personnage.
+- **Notez les statistiques secondaires** : Les PJ commencent au niveau 1 avec 0 Points d'Expérience. 
+- Ils ont 10 + CON **emplacements d'inventaire** et commencent avec **1d6 Points de Vie (PV) maximum**.
+- **Sélectionnez deux métiers** que votre personnage a pu pratiquer, par exemple celui de ses parents et celui de son apprentissage.
+- **Sélectionnez votre équipement** : vous avez 3d6×10 pièces, 2 rations, une corde de 50 pieds, 2 torches, n'importe quelles pièces d'armure ou armes et un carquois de 20 flèches. Si le PJ a des points en INT, il peut recevoir un livre de sorts aléatoire (pp. 22-25) pour chaque point.
+- **Armure** : Les PJ ont des Points d'Armure (PA) égaux à leur nombre de pièces d'armure et une **Classe d'Armure (CA) égale à PA + 11**.
+- **Finitions** : Nommez et décrivez votre personnage.
 
 ## Emplacements d'objet et blessures
-- Emplacements : Les PJ ont 10 + CON emplacements pour enregistrer leur équipement. La plupart des objets, y compris les groupes de petits objets pouvant tenir dans une main, occupent un emplacement. Les objets à deux mains occupent deux emplacements. 500 pièces utilisent un emplacement complet.
-- Dégâts : Les dégâts reçus par un PJ sont soustraits de ses PV. Une fois ses PV à 0, chaque point de dégâts remplit un emplacement d'objet d'une blessure appropriée (poignardé, gelé, brûlé, etc.), de l'emplacement le plus bas au plus élevé, qui ne peut plus être utilisé tant que la blessure n'est pas soignée.
-- Dégâts directs : Les dégâts directs contournent les PV et ajoutent directement des blessures. Cela se produit dans des situations où les compétences de combat d'une créature ne pourraient pas la protéger (par exemple, en tombant ou en étant attaqué à l'improviste). Les monstres reçoivent le triple de dégâts des dégâts directs, puisqu'ils n'ont pas d'emplacements d'objets.
-- Mort : Les PJ meurent lorsque tous leurs emplacements sont remplis de blessures. Les créatures sans emplacements, comme les monstres, meurent simplement à 0 PV.
-- Soins : Les PV des PJ reviennent au maximum chaque matin, à condition qu'ils aient dormi deux gardes et mangé un repas la veille. S'ils sont dans un refuge sûr, ils guérissent également une blessure.
+- **Emplacements** : Les PJ ont 10 + CON emplacements pour enregistrer leur équipement. La plupart des objets, y compris les groupes de petits objets pouvant tenir dans une main, occupent un emplacement. Les objets à deux mains occupent deux emplacements. 500 pièces utilisent un emplacement complet.
+- **Dégâts** : Les dégâts reçus par un PJ sont soustraits de ses PV. Une fois ses PV à 0, chaque point de dégâts remplit un emplacement d'objet d'une blessure appropriée (poignardé, gelé, brûlé, etc.), de l'emplacement le plus bas au plus élevé, qui ne peut plus être utilisé tant que la blessure n'est pas soignée.
+- **Dégâts directs** : Les dégâts directs contournent les PV et ajoutent directement des blessures. Cela se produit dans des situations où les compétences de combat d'une créature ne pourraient pas la protéger (par exemple, en tombant ou en étant attaqué à l'improviste). Les monstres reçoivent le triple de dégâts des dégâts directs, puisqu'ils n'ont pas d'emplacements d'objets.
+- **Mort** : Les PJ meurent lorsque tous leurs emplacements sont remplis de blessures. Les créatures sans emplacements, comme les monstres, meurent simplement à 0 PV.
+- **Soins** : Les PV des PJ reviennent au maximum chaque matin, à condition qu'ils aient dormi deux gardes et mangé un repas la veille. S'ils sont dans un refuge sûr, ils guérissent également une blessure.
 
 ## Montée de Niveau
-- Points d'expérience : Les PJ reçoivent des points d'expérience en fonction de la difficulté de la mission entreprise et de sa réussite.
-- Montée de niveau : À certains seuils d'XP, les PJ gagnent un niveau, ce qui ajoute 1 à trois attributs différents. Ne réinitialisez pas l'XP à zéro. Les trois scores peuvent être choisis par le joueur ou sélectionnés aléatoirement. Chaque niveau permet également au joueur de relancer le maximum de PV de son PJ en utilisant un d6 supplémentaire. Si le total lancé n'est pas supérieur à son dernier maximum, ajoutez 1 au dernier maximum.
+- **Points d'expérience** : Les PJ reçoivent des points d'expérience en fonction de la difficulté de la mission entreprise et de sa réussite.
+- **Montée de niveau** : À certains seuils d'XP, les PJ gagnent un niveau, ce qui ajoute 1 à trois attributs différents. Ne réinitialisez pas l'XP à zéro. Les trois scores peuvent être choisis par le joueur ou sélectionnés aléatoirement. Chaque niveau permet également au joueur de relancer le maximum de PV de son PJ en utilisant un d6 supplémentaire. Si le total lancé n'est pas supérieur à son dernier maximum, ajoutez 1 au dernier maximum.
 
 | Niveau |	XP Total |	PV Max |	Titre |
 | --- | --- | --- | --- |
