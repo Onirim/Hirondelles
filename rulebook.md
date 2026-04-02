@@ -252,6 +252,7 @@ D'un autre côté, un PJ qui s'efforce de rester dans la faveur d'une divinité 
 **Construction** : Le tableau ci-dessous liste le coût pour construire un carré de 2 mètres d'un bâtiment dans divers niveaux de luxe et en utilisant différents matériaux. Les plafonds sont supposés faire 3 mètres de haut. Le personnel d'un bâtiment (non commercial) coûte 50 % de son coût par an.
 
 | Style |	Description |	Coût par 2 mètres carrés |
+| --- | --- | --- |
 | Pauvre |	Murs en terre, toits de chaume, sols en terre. |	10c |
 | Modeste |	Murs en torchis avec quelques briques ou pierres de champ, toits de chaume, sols en roseaux. |	50c |
 | Respectable |	Murs en bois et brique avec quelques pierres, toit en bardeaux, sols en bois. |	250c |
