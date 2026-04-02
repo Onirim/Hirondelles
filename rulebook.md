@@ -2,11 +2,11 @@ Les Hirondelles utilisent le système de jeu [Knave 2nd édition de Ben Milton](
 
 ## Attributs des personnage
 Les personnages joueurs (PJ) possèdent six attributs avec des scores notés de 0 à 10 à ajouter aux jets de dés.
-- **Force (STR)** : L'attribut du Guerrier. Ajouté aux attaques au corps-à-corps et aux jets de dé nécessitant de la puissance comme l'escalade et le port de charges lourdes.
+- **Force (FOR)** : L'attribut du Guerrier. Ajouté aux attaques au corps-à-corps et aux jets de dé nécessitant de la puissance comme l'escalade et le port de charges lourdes.
 - **Dextérité (DEX)** : L'attribut du Voleur. Ajouté aux jets de dé nécessitant agilité et réflexes comme esquiver, se faufiler, fouiller les poches, prestidigitation, etc.
 - **Constitution (CON)** : L'attribut de l'Aventurier. Important pour chaque PJ. Ajouté aux jets de dé pour résister au poison, au froid, etc. Les PJ ont 10 + CON emplacements pour objets et peuvent encaisser 10 + CON blessures avant de mourir.
 - **Intelligence (INT)** : L'attribut du Mage. Ajouté aux jets de dé nécessitant de la ruse, comme crocheter des serrures, alchimie, etc. L'INT améliore l'efficacité des sorts et les PJ peuvent lancer INT sorts par jour.
-- **Sagesse (WIS)** : L'attribut du Ranger. Ajouté aux attaques à distance et aux jets de dé nécessitant perception et volonté comme la cueillette, la navigation, et résister aux sorts.
+- **Sagesse (SAG)** : L'attribut du Ranger. Ajouté aux attaques à distance et aux jets de dé nécessitant perception et volonté comme la cueillette, la navigation, et résister aux sorts.
 - **Charisme (CHA)** : L'attribut du Clerc. Ajouté aux jets de dé nécessitant une force de personnalité comme l'initiative et la persuasion. Les PJ peuvent avoir un nombre de compagnons et bénédictions de patrons égal à leur CHA.
 
 ## Création de personnage
@@ -89,3 +89,44 @@ Utilisez les règles suivantes lorsque les PJ subissent une rencontre aléatoire
 | 10 | Partager des informations avec les PJ |
 | 11	| Accomplir de petits services pour les PJ |
 | 12	| Demander à rejoindre le groupe des PJ |
+
+## Combat
+
+**Initiative** : Le combat se déroule en rounds de 10 secondes, durant lesquels chaque camp a l'opportunité d'agir. Déterminez quel camp agit en premier en effectuant une vérification de CHA contre CHA entre les leaders des deux camps. Lorsqu'un camp agit, toutes ses créatures, dans n'importe quel ordre, peuvent se déplacer (15 mètres pour les PJ) et effectuer une autre action, telle qu'attaquer, lancer un sort, manœuvrer, etc.
+
+**Attaques** : Une attaque est un test utilisant la FOR de l'attaquant (pour les attaques au corps-à-corps) ou la SAG (pour les attaques à distance), visant à toucher la Classe d'Armure du défenseur (Points d'Armure + 11). En cas de réussite, l'attaquant inflige des dégâts à la cible. Si le total du jet d'attaque est de 21 ou plus, l'attaquant peut choisir de réussir également une manœuvre gratuite de son choix. Si un 1 non modifié est lancé, l'arme se brise.
+
+**Manœuvres** : Les manœuvres incluent le désarmement, la poussée, l'étourdissement, l'aveuglement, la destruction d'équipement, le déséquilibre, le vol à la tire, l'escalade, la contention, ou toute autre chose que le MJ juge plausible. Elles ne peuvent causer des dégâts qu'indirectement (par exemple, pousser un ennemi du haut d'une falaise) et sont résolues par une vérification d'attribut appropriée. Elles peuvent être cruciales pour abattre des ennemis redoutables.
+
+**Attaques à distance** : Les attaques à distance ne peuvent pas être effectuées lors d'un combat au corps-à-corps. Si la cible est engagée au corps-à-corps, l'attaque subit une pénalité de -5.
+
+**Attaques sournoises** : Les attaques au corps-à-corps contre des adversaires qui ne s'y attendent pas touchent toujours et infligent des dégâts directs. Les attaques contre des adversaires vraiment sans défense les tuent automatiquement.
+
+**Attaques puissantes** : Après un jet d'attaque réussi mais avant de lancer les dés de dégâts, les PJ peuvent décider de transformer une attaque au corps-à-corps en attaque puissante, ce qui double le nombre de dés de dégâts lancés, mais brise l'arme.
+
+**Dégâts** : Les coups touchants infligent des dégâts égaux au résultat du dé de dégâts de l'arme. Si un ennemi possède une faiblesse face au type de dégâts infligé, ceux-ci deviennent des dégâts directs. S'il est immunisé contre ce type, aucun dégât n'est infligé.
+
+**Modificateurs** : Les jets d'attaque et de manœuvre peuvent bénéficier de modificateurs de +5 ou -5 basés sur le positionnement, l'encerclement, les types d'armes, la visée, la visibilité, la couverture, la taille de l'adversaire, la portée, la surprise, l'élévation, etc. Les métiers ne confèrent aucun modificateur aux jets de combat.
+
+**Test de moral** : Lorsque les PNJ atteignent un point de rupture pendant un combat, ils doivent tester leur moral en lançant 2d6 et en obtenant un résultat égal ou inférieur à leur valeur de moral. S'ils obtiennent un résultat supérieur, ils fuient ou se rendent. Ils peuvent relancer un test échoué une seule fois par combat si leur leader réussit une vérification de CHA. Les points de rupture incluent : après avoir perdu la moitié de leurs PV (s'ils sont seuls), après leur première perte, après la perte de la moitié de leurs forces, après la mort de leur leader, et après avoir été attaqués par quelque chose qu'ils craignent.
+
+## Dangers
+
+- **Feu** : 1d6 de dégâts directs par round. **Brasier** : 2d6 de dégâts directs par round. Immersion dans de la lave : Mort instantanée.
+- **Noyade** : Les PJ peuvent retenir leur souffle pendant 30 secondes + 30 secondes pour chaque point de CON. Après cela, ils s'évanouissent et doivent réussir un jet de CON à chaque round ou mourir.
+- **Gel** : 1 point de dégâts directs par tour de 10 minutes, sauf si le PJ réussit un jet de CON.
+- **Éclair** : 3d6 de dégâts directs.
+- **Chute** : 1d6 de dégâts directs par 3 mètres (un étage) de chute. Si au moins trois des dés affichent un 6, le PJ est tué instantanément.
+- **Soif** : Chaque jour sans boire d'eau applique une pénalité de -5 à tous les jets. Après trois jours, il faut réussir un jet de CON chaque jour ou mourir. On suppose que les PJ trouvent de l'eau à boire en voyage, sauf s'ils se trouvent dans un environnement très aride.
+- **Privation de sommeil** : Pour chaque jour sans sommeil, appliquez -5 à tous les jets. Après deux jours, effectuez un jet de SAG toutes les 4 heures ou tombez inconscient pendant 12 heures.
+- **Alcoolisme** : Effectuez un jet de CON chaque heure où un PJ boit de l'alcool. S'il échoue, il devient ivre et subit -5 à tous les jets jusqu'au lendemain. Si une créature échoue au jet de CON deux heures de suite, elle s'évanouit pendant 8 heures.
+
+## Lancement de sorts
+
+Un grimoire occupe un emplacement d'objet et contient un seul sort. Ils ne peuvent pas être créés ou copiés par les PJ et doivent être trouvés, achetés, volés ou empruntés à d'autres lanceurs de sorts.
+
+**Lancer de sorts** : Lancer un sort prend une action. Chaque grimoire ne peut être utilisé qu'une fois par jour, mais les PJ peuvent utiliser un nombre de grimoires par jour égal à leur INT.
+
+**Sorts** : Lorsque « INT » apparaît dans la description d'un sort, remplacez-le par n'importe quel nombre jusqu'à l'INT du lanceur. Ce nombre compte comme le niveau du sort, si nécessaire. Un « accessoire » est un objet pouvant être soulevé d'une main, et un « objet » (au sens large) est n'importe quoi jusqu'à la taille d'un humain. Sauf mention contraire, tous les sorts avec des effets continus durent 10 minutes (1 tour) et ont une portée de 15 mètres.
+
+**Sauvegardes** : Lorsqu'un sort vise une créature hostile de niveau supérieur à celui du sort, elle peut effectuer un jet contre le niveau du sort. En cas de réussite, l'effet du sort est réduit de moitié. Si elle réussit avec une marge de 10 ou plus, l'effet est annulé.
