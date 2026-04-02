@@ -121,7 +121,7 @@ Utilisez les règles suivantes lorsque les PJ subissent une rencontre aléatoire
 - **Privation de sommeil** : Pour chaque jour sans sommeil, appliquez -5 à tous les jets. Après deux jours, effectuez un jet de SAG toutes les 4 heures ou tombez inconscient pendant 12 heures.
 - **Alcoolisme** : Effectuez un jet de CON chaque heure où un PJ boit de l'alcool. S'il échoue, il devient ivre et subit -5 à tous les jets jusqu'au lendemain. Si une créature échoue au jet de CON deux heures de suite, elle s'évanouit pendant 8 heures.
 
-## Lancement de sorts
+## Magie profane
 
 Un grimoire occupe un emplacement d'objet et contient un seul sort. Ils ne peuvent pas être créés ou copiés par les PJ et doivent être trouvés, achetés, volés ou empruntés à d'autres lanceurs de sorts.
 
@@ -131,7 +131,7 @@ Un grimoire occupe un emplacement d'objet et contient un seul sort. Ils ne peuve
 
 **Sauvegardes** : Lorsqu'un sort vise une créature hostile de niveau supérieur à celui du sort, elle peut effectuer un jet contre le niveau du sort. En cas de réussite, l'effet du sort est réduit de moitié. Si elle réussit avec une marge de 10 ou plus, l'effet est annulé.
 
-## Magie des reliques
+## Magie divine
 
 **Divinités** : Les divinités sont des êtres magiques puissants (souvent incorporels) qui accordent une partie de leur pouvoir aux PJ par le biais de reliques. Ils peuvent être de petits dieux, des saints, des esprits de la nature, des entités des plans extérieurs, etc. Les MJ doivent traiter les divinités comme des PNJ, en leur donnant des objectifs, des personnalités, des manières, etc. Chaque divinité a un ou deux domaines qui l'intéressent particulièrement, que ce soit positivement ou négativement.
 
