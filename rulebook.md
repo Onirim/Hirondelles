@@ -37,16 +37,16 @@ Les personnages joueurs (PJ) possèdent six attributs avec des scores notés de 
 
 | Niveau |	XP Total |	PV Max |	Titre |
 | --- | --- | --- | --- |
-| 1 |	0 |	1d6 |	Novice |
-| 2 |	2 000 |	2d6 |	Apprenti |
-| 3 |	4 000 |	3d6 |	Bleusaille |
+| 1 |	0 |	1d6 |	Recrue |
+| 2 |	2 000 |	2d6 |	Ecuyer |
+| 3 |	4 000 |	3d6 |	Gardien |
 | 4 |	8 000 |	4d6 |	Compagnon |
-| 5 |	16 000 |	5d6 |	? |
-| 6 |	32 000 |	6d6 |	? |
-| 7 |	64 000 |	7d6 |	? |
-| 8 |	125 000 |	8d6 |	? |
-| 9 |	250 000 |	9d6 |	? |
-| 10 |	500 000 |	10d6 |	Grand maître |
+| 5 |	16 000 |	5d6 |	Vétéran |
+| 6 |	32 000 |	6d6 |	Sergent |
+| 7 |	64 000 |	7d6 |	Capitaine |
+| 8 |	125 000 |	8d6 |	Chevalier |
+| 9 |	250 000 |	9d6 |	Lieutenant |
+| 10 |	500 000 |	10d6 | Grand Maître |
 
 ## Tests
 
