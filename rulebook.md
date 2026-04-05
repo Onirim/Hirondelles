@@ -35,18 +35,18 @@ Les personnages joueurs (PJ) possèdent six attributs avec des scores notés de 
 - **Points d'expérience** : Les PJ reçoivent des points d'expérience en fonction de la difficulté de la mission entreprise et de sa réussite.
 - **Montée de niveau** : À certains seuils d'XP, les PJ gagnent un niveau, ce qui ajoute 1 à trois attributs différents. Ne réinitialisez pas l'XP à zéro. Les trois scores peuvent être choisis par le joueur ou sélectionnés aléatoirement. Chaque niveau permet également au joueur de relancer le maximum de PV de son PJ en utilisant un d6 supplémentaire. Si le total lancé n'est pas supérieur à son dernier maximum, ajoutez 1 au dernier maximum.
 
-| Niveau |	XP Total |	PV Max |	Titre |
-| --- | --- | --- | --- |
-| 1 |	0 |	1d6 |	Recrue |
-| 2 |	2 000 |	2d6 |	Ecuyer |
-| 3 |	4 000 |	3d6 |	Gardien |
-| 4 |	8 000 |	4d6 |	Compagnon |
-| 5 |	16 000 |	5d6 |	Vétéran |
-| 6 |	32 000 |	6d6 |	Sergent |
-| 7 |	64 000 |	7d6 |	Capitaine |
-| 8 |	125 000 |	8d6 |	Chevalier |
-| 9 |	250 000 |	9d6 |	Lieutenant |
-| 10 |	500 000 |	10d6 | Grand Maître |
+| Niveau |	XP Total |	PV Max |	Titre | Symbole des Hirondelles |
+| --- | --- | --- | --- | --- |
+| 1 |	0 |	1d6 |	Recrue | Une plume blanche |
+| 2 |	2 000 |	2d6 |	Ecuyer | Deux plumes blanches |
+| 3 |	4 000 |	3d6 |	Gardien | Trois plumes blanches |
+| 4 |	8 000 |	4d6 |	Compagnon | Une plume bleue |
+| 5 |	16 000 |	5d6 |	Vétéran | Deux plumes bleues |
+| 6 |	32 000 |	6d6 |	Sergent | Trois plumes bleues |
+| 7 |	64 000 |	7d6 |	Capitaine | Une plume jaune |
+| 8 |	125 000 |	8d6 |	Chevalier | Deux plumes jaunes |
+| 9 |	250 000 |	9d6 |	Lieutenant | Trois plumes jaunes |
+| 10 |	500 000 |	10d6 | Grand Maître | Une couronne de plumes jaune |
 
 ## Tests
 
