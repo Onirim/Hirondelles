@@ -70,7 +70,7 @@ En fonction de la profession du personnage et de son niveau, notez sur la fiche 
 
 ### Compléter les détails techniques
 
-Calculez les valeurs de compétences, PP, les PdC, la base de mouvement, la valeur d’encombrement.
+Calculez les valeurs de compétences, PP (temporaire de pouvoir /10) + (niveau x PP/Niv), les PdC (base + Rangs x PdC/Rang), la base de mouvement, la valeur d’encombrement.
 
 ### Acheter l’équipement
 
