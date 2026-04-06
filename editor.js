@@ -16,6 +16,7 @@ function editChar(id, dataOverride) {
   if (!state.characteristics) state.characteristics = [];
   if (!state.skills)          state.skills          = [];
   if (!state.traits)          state.traits          = [];
+  if (!state.spell_lists)     state.spell_lists     = [];
   if (!state.tags)            state.tags            = [];
   // Niveau : 0 est valide (pas de niveau)
   if (state.level === undefined || state.level === null) state.level = 0;
@@ -47,6 +48,7 @@ function populateEditor() {
   renderCharacteristics();
   renderSkills();
   renderTraits();
+  renderSpellLists();
 
   const bgField = document.getElementById('f-background');
   if (bgField) bgField.value = state.background || '';
@@ -215,6 +217,52 @@ function addTrait() {
 function removeTrait(i) {
   state.traits.splice(i, 1);
   renderTraits();
+  updatePreview();
+}
+
+
+// ══════════════════════════════════════════════════════════════
+// LISTES DE SORTS
+// ══════════════════════════════════════════════════════════════
+
+function renderSpellLists() {
+  const list = document.getElementById('spell-lists-list');
+  if (!list) return;
+  list.innerHTML = (state.spell_lists || []).map((sp, i) => spellListHTML(sp, i)).join('');
+}
+
+function spellListHTML(sp, i) {
+  return `<div class="generic-entry trait-entry">
+    <div class="generic-entry-row" style="gap:6px">
+      <input type="text"
+        class="generic-input"
+        placeholder="${t('editor_spell_list_name_ph')}"
+        value="${esc(sp.name || '')}"
+        style="flex:1"
+        oninput="state.spell_lists[${i}].name=this.value;updatePreview()">
+      <button class="rm-btn" onclick="removeSpellList(${i})">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="3" y1="3" x2="13" y2="13"/>
+          <line x1="13" y1="3" x2="3" y2="13"/>
+        </svg>
+      </button>
+    </div>
+    <textarea
+      class="generic-textarea"
+      placeholder="${t('editor_spell_list_detail_ph')}"
+      oninput="state.spell_lists[${i}].detail=this.value;updatePreview()">${esc(sp.detail || '')}</textarea>
+  </div>`;
+}
+
+function addSpellList() {
+  state.spell_lists.push({ id: _uid(), name: '', detail: '' });
+  renderSpellLists();
+  updatePreview();
+}
+
+function removeSpellList(i) {
+  state.spell_lists.splice(i, 1);
+  renderSpellLists();
   updatePreview();
 }
 
