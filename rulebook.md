@@ -20,7 +20,7 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 | Barde | Semi-utilisateur de sort | Sa force de personnalité est une arme |
 | Mage | Utilisateur pur de l'essence | Pratique les arts bruts de l'élémentalisme avant tout |
 | Prêtre | Utilisateur pur de la théurgie | Prêtres et représentants des Dieux auprès des Hommes |
-| Mentat | Utilisateur pur du mentalisme | Possèdent une puissante personnalité et un pouvoir étrange lié à la Conjonction des Sphères |
+| Mentat | Utilisateur pur du mentalisme | Possèdent une forte personnalité et un pouvoir étrange |
 
 
 ### Choisir de la race ou de l'ethnie du personnage
