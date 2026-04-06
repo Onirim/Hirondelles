@@ -18,12 +18,10 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 | Larron | Royaume des armes | L'archétype du brigand, du voleur de grand chemins ou du mercenaire |
 | Ranger | Semi-utilisateur de sort | Il fait corps avec la nature si bien qu'elle lui octroie souvent des dons |
 | Barde | Semi-utilisateur de sort | Sa force de personnalité est une arme |
-| Magicien | Utilisateur pur de l'essence | Pratique les arts bruts de l'élémentalisme avant tout |
-| Illusionniste | Utilisateur pur de l'essence | Manipule la réalité et notre perception de celle-ci |
-| Alchimiste | Utilisateur pur de l'essence | Conçois et enchante des objets enchantés, potions, etc. |
-| Clerc | Utilisateur pur de la théurgie | Prêtres et représentants des Dieux auprès des Hommes |
-| Animiste | Utilisateur pur de la théurgie | Chamans ou adorateurs de puissances de la nature |
-| Guérisseur | Utilisateur pur de la théurgie | Faiseurs de miracles et véritables saints de leur foi |
+| Mage | Utilisateur pur de l'essence | Pratique les arts bruts de l'élémentalisme avant tout |
+| Prêtre | Utilisateur pur de la théurgie | Prêtres et représentants des Dieux auprès des Hommes |
+| Mentat | Utilisateur pur du mentalisme | Possèdent une puissante personnalité et un pouvoir étrange lié à la Conjonction des Sphères |
+
 
 ### Choisir de la race ou de l'ethnie du personnage
 
