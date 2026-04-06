@@ -240,6 +240,11 @@ function spellListHTML(sp, i) {
         value="${esc(sp.name || '')}"
         style="flex:1"
         oninput="state.spell_lists[${i}].name=this.value;updatePreview()">
+      <div class="score-ctrl">
+        <button onclick="changeScore('spell_lists',${i},-1,event)">−</button>
+        <div class="score-val trait-score">${sp.score !== '' && sp.score !== undefined && sp.score !== null ? sp.score : '—'}</div>
+        <button onclick="changeScore('spell_lists',${i},1,event)">+</button>
+      </div>
       <button class="rm-btn" onclick="removeSpellList(${i})">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
           <line x1="3" y1="3" x2="13" y2="13"/>
@@ -255,7 +260,7 @@ function spellListHTML(sp, i) {
 }
 
 function addSpellList() {
-  state.spell_lists.push({ id: _uid(), name: '', detail: '' });
+  state.spell_lists.push({ id: _uid(), name: '', detail: '', score: '' });
   renderSpellLists();
   updatePreview();
 }
@@ -278,7 +283,7 @@ function changeScore(section, idx, delta, event) {
   const step = (event && event.shiftKey) ? delta * 10 : delta;
   const item = state[section][idx];
 
-  if (section === 'traits') {
+  if (section === 'traits' || section === 'spell_lists') {
     // Score optionnel : si vide, on démarre à 0
     const current = item.score === '' || item.score === undefined || item.score === null
       ? 0 : parseInt(item.score) || 0;
@@ -292,7 +297,7 @@ function changeScore(section, idx, delta, event) {
   // Rafraîchit le DOM localement
   const scoreEl = event?.target?.closest('.generic-entry')?.querySelector('.score-val');
   if (scoreEl) {
-    if (section === 'traits') {
+    if (section === 'traits' || section === 'spell_lists') {
       scoreEl.textContent = item.score === '' || item.score === undefined ? '—' : item.score;
     } else {
       scoreEl.textContent = item.score;
@@ -302,6 +307,7 @@ function changeScore(section, idx, delta, event) {
   if (section === 'characteristics') renderCharacteristics();
   if (section === 'skills')          renderSkills();
   if (section === 'traits')          renderTraits();
+  if (section === 'spell_lists')     renderSpellLists();
 
   updatePreview();
 }

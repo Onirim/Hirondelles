@@ -50,7 +50,7 @@ function freshState() {
     characteristics:       buildDefaultCharacteristics(), // [{ id, name, trigram, score }]
     skills:                [],     // [{ id, name, score }]
     traits:                [],     // [{ id, name, score, detail }]
-    spell_lists:           [],     // [{ id, name, detail }]
+    spell_lists:           [],     // [{ id, name, score, detail }]
     background:            '',
   };
 }
@@ -178,6 +178,9 @@ function renderCharSheet(data) {
         <div class="compl-chip">
           <div style="display:flex;justify-content:space-between;align-items:center">
             <span>${esc(sp.name)}</span>
+            ${sp.score !== '' && sp.score !== undefined && sp.score !== null
+              ? `<span style="font-family:var(--font-mono);font-size:12px;color:var(--accent);font-weight:700">${sp.score}</span>`
+              : ''}
           </div>
           ${sp.detail ? `<div class="compl-detail">${esc(sp.detail)}</div>` : ''}
         </div>`).join('')}
