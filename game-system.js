@@ -16,12 +16,16 @@ const GAME_SUBTITLE = 'Gestionnaire de campagne';
 // ── 2. ÉTAT INITIAL D'UN PERSONNAGE ──────────────────────────
 
 const DEFAULT_CHARACTERISTICS = [
-  { name: 'Force',        trigram: 'FOR', score: 0 },
-  { name: 'Dextérité',    trigram: 'DEX', score: 0 },
-  { name: 'Constitution', trigram: 'CON', score: 0 },
-  { name: 'Intelligence', trigram: 'INT', score: 0 },
-  { name: 'Sagesse',      trigram: 'SAG', score: 0 },
-  { name: 'Charisme',     trigram: 'CHA', score: 0 },
+  { name: 'Constitution',        trigram: 'CO', score: 0 },
+  { name: 'Agilité',    trigram: 'AG', score: 0 },
+  { name: 'Autodiscipline', trigram: 'AD', score: 0 },
+  { name: 'Mémoire', trigram: 'ME', score: 0 },
+  { name: 'Raisonnement',      trigram: 'RS', score: 0 },
+  { name: 'Force',     trigram: 'FO', score: 0 },
+  { name: 'Rapidité',     trigram: 'RP', score: 0 },
+  { name: 'Présence',     trigram: 'PR', score: 0 },
+  { name: 'Empathie',     trigram: 'EM', score: 0 },
+  { name: 'Intuition',     trigram: 'IT', score: 0 },
 ];
 
 function buildDefaultCharacteristics() {
@@ -181,9 +185,9 @@ const GAME_I18N = {
   fr: {
     // Identité
     editor_field_subtitle:     'Titre / Occupation',
-    editor_field_subtitle_ph:  'Ex : Guerrier, Mage, Voleur…',
+    editor_field_subtitle_ph:  'Ex : Mercenaire, commerçant, baron…',
     editor_field_race_class:   'Race / Classe',
-    editor_field_race_class_ph:'Ex : Elfe Rôdeur, Humain Paladin…',
+    editor_field_race_class_ph:'Ex : Elfe ranger, humain de dkellige guerrier…',
     editor_field_level:        'Niveau',
 
     // Carte roster
@@ -198,15 +202,15 @@ const GAME_I18N = {
     // Éditeur — caractéristiques
     editor_section_characteristics:   'Caractéristiques',
     editor_char_name_ph:              'Nom complet (ex : Force)',
-    editor_char_trigram_ph:           'TRI',
+    editor_char_trigram_ph:           'Abr.',
     editor_char_score_label:          'Score',
-    editor_char_score_hint:           'Shift+clic : ±10',
+    editor_char_score_hint:           'Maj+clic : ±10',
     editor_add_characteristic:        '+ Ajouter une caractéristique',
 
     // Éditeur — compétences
     editor_section_skills:    'Compétences',
     editor_skill_name_ph:     'Nom de la compétence',
-    editor_skill_score_hint:  'Shift+clic : ±10',
+    editor_skill_score_hint:  'Maj+clic : ±10',
     editor_add_skill:         '+ Ajouter une compétence',
 
     // Éditeur — traits
@@ -241,7 +245,7 @@ const GAME_I18N = {
 
     editor_section_characteristics:   'Characteristics',
     editor_char_name_ph:              'Full name (e.g. Strength)',
-    editor_char_trigram_ph:           'TRI',
+    editor_char_trigram_ph:           'Abr.',
     editor_char_score_label:          'Score',
     editor_char_score_hint:           'Shift+click: ±10',
     editor_add_characteristic:        '+ Add a characteristic',
