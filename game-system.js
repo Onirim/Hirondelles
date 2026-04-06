@@ -55,16 +55,12 @@ function renderCharCardBody(c) {
   const lvlTag = c.level !== undefined && c.level !== 0 && c.level !== null
     ? `<span class="card-rank">${t('card_level')}${c.level}</span>` : '';
 
-  // Toutes les caractéristiques (pas de limite d'affichage)
-  const chars = (c.characteristics || []);
-  const charsHtml = chars.length
-    ? `<div class="card-char-row">
-        ${chars.map(ch => `
-          <div class="card-char-chip">
-            <div class="card-char-trigram">${esc(ch.trigram || '???')}</div>
-            <div class="card-char-score">${ch.score ?? 0}</div>
-          </div>`).join('')}
-       </div>` : '';
+  // Extrait du background (tronqué)
+  const rawBackground = String(c.background || '').replace(/\s+/g, ' ').trim();
+  const maxBackgroundLength = 180;
+  const backgroundExcerpt = rawBackground
+    ? rawBackground.slice(0, maxBackgroundLength).trimEnd() + (rawBackground.length > maxBackgroundLength ? '…' : '')
+    : '';
 
   return `
     <div class="card-name">${esc(c.name) || '—'}</div>
@@ -72,7 +68,7 @@ function renderCharCardBody(c) {
     <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">
       ${rcTag}${lvlTag}
     </div>
-    ${charsHtml}
+    ${backgroundExcerpt ? `<div class="card-sub" style="margin-top:6px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">${esc(backgroundExcerpt)}</div>` : ''}
   `;
 }
 
