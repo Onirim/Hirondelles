@@ -12,6 +12,12 @@ Enfin, annoncez au MJ la paire de scores pour chaque ligne (temporaire et jets d
 
 Choisir une des professions disponibles et notez les deux caractéristiques principales. 
 
+| Armes | Semi-lanceurs de sort | Lanceurs purs d'essence | Lanceurs purs de théurgie | Lanceurs purs de mentalisme | Lanceurs hybrides |
+| --- | --- | --- | --- | --- | --- |
+| Guerrier | Moine | Magicien | Clerc | Mentaliste | Sorcier |
+| Voleur | Ranger | Illusionniste | Animiste | Soigneur | Mystique |
+| Larron | Barde | Alchimiste | Guérisseur | Prophète | Astrologue |
+
 ### Choisir de la race ou de l'ethnie du personnage
 
 En fonction de la race ou de l'ethnie choisie, notez les ajustements raciaux et les bonus aux caractéristiques, le dé de PdC (ou sa moyenne basse) ainsi que le taux de récupération. La taille et le poids du personnage doivent être définis à ce stade. Choisir deux langues de départ à (7/0).
