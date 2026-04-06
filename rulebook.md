@@ -11,18 +11,6 @@ Enfin, annoncez au MJ la paire de scores pour chaque ligne (temporaire et jets d
 ### Choisir de la profession
 
 Choisir une des professions disponibles et notez les deux caractéristiques principales. 
-| Profession | Type | Détails |
-| --- | --- | --- |
-| Guerrier | Royaume des armes | Le profil type de tout combattant, soldat ou chevalier |
-| Voleur | Royaume des armes | Surtout à l'aise dans les environnements urbains |
-| Larron | Royaume des armes | L'archétype du brigand, du voleur de grand chemins ou du mercenaire |
-| Ranger | Semi-utilisateur de sort | Il fait corps avec la nature si bien qu'elle lui octroie souvent des dons |
-| Barde | Semi-utilisateur de sort | Sa force de personnalité est une arme |
-| Sorceleur | Semi-utilisateur de sorts | Mutant créé pour lutter contre les monstres |
-| Mage | Utilisateur pur de l'essence | Pratique les arts bruts de l'élémentalisme avant tout |
-| Prêtre | Utilisateur pur de la théurgie | Prêtres et représentants des Dieux auprès des Hommes |
-| Mentat | Utilisateur pur du mentalisme | Possèdent une forte personnalité et un pouvoir étrange |
-
 
 ### Choisir de la race ou de l'ethnie du personnage
 
