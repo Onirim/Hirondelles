@@ -16,7 +16,7 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 | --- | --- | --- | --- | --- | --- |
 | Guerrier | Ranger | Magicien | Clerc | Mentaliste | Sorcier |
 | Voleur | Barde | Illusionniste | Animiste | Soigneur | Mystique |
-| Larron | *Sans Profession* | Alchimiste | Guérisseur | Prophète | Astrologue |
+| Larron | Sans profession | Alchimiste | Guérisseur | Prophète | Astrologue |
 
 ### Choisir la race du personnage
 
