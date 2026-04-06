@@ -1,206 +1,253 @@
 // ══════════════════════════════════════════════════════════════
-// Knave 2e Édition — Système de jeu
+// Camply TTRPG Manager — Système générique
+// Remplacez ce fichier par votre propre game-system.js.
+//
+// Contrat : les fonctions et constantes exportées ci-dessous
+// DOIVENT toutes être présentes et respecter leur signature.
 // ══════════════════════════════════════════════════════════════
 
-const GAME_NAME     = 'Knave';
-const GAME_SUBTITLE = '2e Édition';
 
-// ── Caractéristiques ──────────────────────────────────────────
-const ABILITY_KEYS   = ['FOR', 'DEX', 'CON', 'INT', 'SAG', 'CHA'];
-const ABILITY_LABELS = () => [
-  t('ability_for'), t('ability_dex'), t('ability_con'),
-  t('ability_int'), t('ability_sag'), t('ability_cha'),
-];
+// ── 1. IDENTITÉ DU JEU ────────────────────────────────────────
 
-// ── État initial d'un personnage ──────────────────────────────
+const GAME_NAME     = 'Generic RPG';
+const GAME_SUBTITLE = 'Gestionnaire de campagne';
+
+
+// ── 2. ÉTAT INITIAL D'UN PERSONNAGE ──────────────────────────
+
 function freshState() {
-  const abilities = {};
-  ABILITY_KEYS.forEach(k => { abilities[k] = 0; });
   return {
     name:                  '',
-    subtitle:              '',
-    level:                 1,
-    abilities,
-    jobs:                  [],   // Métiers
-    blessings:             [],   // Bénédictions
-    recipes:               [],   // Recettes
+    subtitle:              '',      // titre / occupation
+    race_class:            '',      // race / classe
+    level:                 0,       // 0 = pas de niveau affiché
     is_public:             false,
     illustration_url:      '',
     illustration_position: 0,
     tags:                  [],
+    characteristics:       [],     // [{ id, name, trigram, score }]
+    skills:                [],     // [{ id, name, score }]
+    traits:                [],     // [{ id, name, score, detail }]
     background:            '',
   };
 }
 
-// ── Calculs ───────────────────────────────────────────────────
-function abilityBudget(state) {
-  return Math.max(0, (state.level || 1) * 3);
+
+// ── 3. HELPERS INTERNES ───────────────────────────────────────
+
+function _uid() {
+  return Math.random().toString(36).slice(2, 10);
 }
 
-function abilitySpent(state) {
-  return ABILITY_KEYS.reduce((sum, k) => sum + (Number(state.abilities?.[k]) || 0), 0);
+function _clamp(v, min, max) {
+  return Math.max(min, Math.min(max, v));
 }
 
 
-// ── Rendu carte roster ────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════
+// 4. RENDU CARTE ROSTER
+// ══════════════════════════════════════════════════════════════
+
 function renderCharCardBody(c) {
-  const level = c.level || 1;
-  const abilities = c.abilities || {};
+  // Race/classe + niveau (niveau masqué si 0)
+  const rcTag = c.race_class
+    ? `<span class="card-rc-tag">${esc(c.race_class)}</span>` : '';
+  const lvlTag = c.level !== undefined && c.level !== 0 && c.level !== null
+    ? `<span class="card-rank">${t('card_level')}${c.level}</span>` : '';
 
-  const abilitiesHtml = ABILITY_KEYS.map((k, i) => {
-    const val = Number(abilities[k]) || 0;
-    return `<div class="card-attr">
-      <div class="val">${val}</div>
-      <div class="lbl">${ABILITY_LABELS()[i]}</div>
-    </div>`;
-  }).join('');
+  // Toutes les caractéristiques (pas de limite d'affichage)
+  const chars = (c.characteristics || []);
+  const charsHtml = chars.length
+    ? `<div class="card-char-row">
+        ${chars.map(ch => `
+          <div class="card-char-chip">
+            <div class="card-char-trigram">${esc(ch.trigram || '???')}</div>
+            <div class="card-char-score">${ch.score ?? 0}</div>
+          </div>`).join('')}
+       </div>` : '';
 
   return `
     <div class="card-name">${esc(c.name) || '—'}</div>
     ${c.subtitle ? `<div class="card-sub">${esc(c.subtitle)}</div>` : ''}
-    <div class="card-rank">${t('card_level_label')} ${level}</div>
-    <div class="card-attrs" style="display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin-top:12px">
-      ${abilitiesHtml}
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">
+      ${rcTag}${lvlTag}
     </div>
+    ${charsHtml}
   `;
 }
 
-// ── Rendu fiche complète ──────────────────────────────────────
+
+// ══════════════════════════════════════════════════════════════
+// 5. RENDU FICHE COMPLÈTE (preview éditeur + vue partagée)
+// ══════════════════════════════════════════════════════════════
+
 function renderCharSheet(data) {
-  const level     = data.level || 1;
-  const abilities = data.abilities || {};
 
-  // Caractéristiques
-  const attrsHtml = ABILITY_KEYS.map((k, i) => {
-    const val = Number(abilities[k]) || 0;
-    return `<div class="preview-attr" style="text-align:center">
-      <div class="lbl" style="font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);margin-bottom:6px">${ABILITY_LABELS()[i]}</div>
-      <div class="val" style="font-family:var(--font-mono);font-size:28px;font-weight:700;line-height:1;color:var(--accent)">${val}</div>
-    </div>`;
-  }).join('');
+  // ── Illustration ──────────────────────────────────────────
+  const illusHtml = data.illustration_url
+    ? `<img class="preview-illus"
+         src="${esc(data.illustration_url)}"
+         style="object-position:center ${data.illustration_position || 0}%"
+         onclick="openLightbox('${esc(data.illustration_url)}')" alt="">` : '';
 
-  // Section générique (métiers / bénédictions / recettes)
-  function renderItems(items, sectionKey) {
-    const filtered = (items || []).filter(p => p.name);
-    if (!filtered.length) return '';
-    return `
-      <div class="preview-section-title">${t(sectionKey)}</div>
-      ${filtered.map(p => `
-        <div class="preview-power">
-          <div class="pow-body">
-            <div class="pow-name">${esc(p.name)}</div>
-            ${p.desc ? `<div class="pow-desc">${esc(p.desc)}</div>` : ''}
-          </div>
-          ${p.score ? `<div class="pow-cost" style="font-family:var(--font-mono);font-size:12px;color:var(--text3)">${p.score}</div>` : ''}
-        </div>`).join('')}`;
-  }
+  // ── En-tête ───────────────────────────────────────────────
+  const rcTag = data.race_class
+    ? `<span class="card-rc-tag" style="margin-top:8px">${esc(data.race_class)}</span>` : '';
 
-  const bgText = (data.background || '').trim();
+  // Niveau masqué si 0 ou null
+  const lvlBadge = data.level !== undefined && data.level !== 0 && data.level !== null
+    ? `<div class="preview-rank-badge">${t('card_level')}${data.level ?? 0}</div>` : '';
 
-  return `
-    ${data.illustration_url
-      ? `<img class="preview-illus" src="${esc(data.illustration_url)}" style="object-position:center ${data.illustration_position || 0}%" onclick="openLightbox('${esc(data.illustration_url)}')" alt="">`
-      : ''}
-
+  const headerHtml = `
     <div class="preview-header">
       <div class="preview-name">${esc(data.name) || '—'}</div>
       ${data.subtitle ? `<div class="preview-sub">${esc(data.subtitle)}</div>` : ''}
-      <div class="preview-rank-badge">${t('card_level_label')} ${level}</div>
-    </div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px">
+        ${rcTag}
+        ${lvlBadge}
+      </div>
+    </div>`;
 
-    <div class="preview-section-title">${t('preview_section_abilities')}</div>
-    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:4px">
-      ${attrsHtml}
-    </div>
-    <div style="text-align:right;font-family:var(--font-mono);font-size:11px;color:var(--text3);margin-bottom:16px">
-      ${t('abilities_budget_label')} : ${abilitySpent(data)} / ${abilityBudget(data)}
-    </div>
+  // ── Caractéristiques (toutes, sans limite) ─────────────────
+  const chars = data.characteristics || [];
+  const charsHtml = chars.length ? `
+    <div class="preview-section-title">${t('section_characteristics')}</div>
+    <div class="preview-attrs">
+      ${chars.map(ch => `
+        <div class="preview-attr" style="border-left:3px solid var(--accent)">
+          <div class="val" style="color:var(--accent);font-size:26px">${ch.score ?? 0}</div>
+          <div class="lbl">${esc(ch.trigram || '???')}</div>
+          <div class="cost" style="font-size:11px;color:var(--text2);margin-top:2px">${esc(ch.name)}</div>
+        </div>`).join('')}
+    </div>` : '';
 
-    ${renderItems(data.jobs,      'preview_section_jobs')}
-    ${renderItems(data.blessings, 'preview_section_blessings')}
-    ${renderItems(data.recipes,   'preview_section_recipes')}
+  // ── Compétences ───────────────────────────────────────────
+  const skills = data.skills || [];
+  const skillsHtml = skills.length ? `
+    <div class="preview-section-title">${t('section_skills')}</div>
+    <div class="apt-preview-grid">
+      ${skills.map(sk => `
+        <div class="apt-preview-row">
+          <span class="name">${esc(sk.name)}</span>
+          <span class="rank-num">${sk.score ?? 0}</span>
+        </div>`).join('')}
+    </div>` : '';
 
-    ${bgText ? `
-      <div class="preview-section-title">${t('preview_section_background')}</div>
-      <div class="background-preview">${esc(bgText)}</div>` : ''}
-  `;
+  // ── Traits (sans type, juste nom + score + description) ───
+  const traits = data.traits || [];
+  const traitsHtml = traits.length ? `
+    <div class="preview-section-title">${t('section_traits')}</div>
+    <div class="compl-preview">
+      ${traits.map(tr => `
+        <div class="compl-chip">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span>${esc(tr.name)}</span>
+            ${tr.score !== '' && tr.score !== undefined && tr.score !== null
+              ? `<span style="font-family:var(--font-mono);font-size:12px;color:var(--accent);font-weight:700">${tr.score}</span>`
+              : ''}
+          </div>
+          ${tr.detail ? `<div class="compl-detail">${esc(tr.detail)}</div>` : ''}
+        </div>`).join('')}
+    </div>` : '';
+
+  // ── Background ────────────────────────────────────────────
+  const bgHtml = data.background ? `
+    <div class="preview-section-title">${t('section_background')}</div>
+    <div class="background-preview">${esc(data.background)}</div>` : '';
+
+  return `${illusHtml}${headerHtml}${charsHtml}${skillsHtml}${traitsHtml}${bgHtml}`;
 }
 
-// ── Traductions ───────────────────────────────────────────────
+
+// ══════════════════════════════════════════════════════════════
+// 6. TRADUCTIONS (clés spécifiques au jeu)
+// ══════════════════════════════════════════════════════════════
+
 const GAME_I18N = {
   fr: {
-    // Caractéristiques
-    ability_for: 'FOR', ability_dex: 'DEX', ability_con: 'CON',
-    ability_int: 'INT', ability_sag: 'SAG', ability_cha: 'CHA',
-    ability_for_full: 'Force',        ability_dex_full: 'Dextérité',
-    ability_con_full: 'Constitution', ability_int_full: 'Intelligence',
-    ability_sag_full: 'Sagesse',      ability_cha_full: 'Charisme',
+    // Identité
+    editor_field_subtitle:     'Titre / Occupation',
+    editor_field_subtitle_ph:  'Ex : Guerrier, Mage, Voleur…',
+    editor_field_race_class:   'Race / Classe',
+    editor_field_race_class_ph:'Ex : Elfe Rôdeur, Humain Paladin…',
+    editor_field_level:        'Niveau',
 
-    // Carte
-    card_level_label: 'Niveau',
+    // Carte roster
+    card_level: 'Niv. ',
 
-    // Preview sections
-    preview_section_abilities:  'Caractéristiques',
-    preview_section_jobs:       'Métiers',
-    preview_section_blessings:  'Bénédictions',
-    preview_section_recipes:    'Recettes',
-    preview_section_background: 'Historique',
+    // Sections fiche
+    section_characteristics: 'Caractéristiques',
+    section_skills:          'Compétences',
+    section_traits:          'Traits',
+    section_background:      'Background',
 
-    // Budget
-    abilities_budget_label: 'Points utilisés',
+    // Éditeur — caractéristiques
+    editor_section_characteristics:   'Caractéristiques',
+    editor_char_name_ph:              'Nom complet (ex : Force)',
+    editor_char_trigram_ph:           'TRI',
+    editor_char_score_label:          'Score',
+    editor_char_score_hint:           'Shift+clic : ±10',
+    editor_add_characteristic:        '+ Ajouter une caractéristique',
 
-    // Éditeur
-    editor_section_level:      'Niveau',
-    editor_section_abilities:  'Caractéristiques',
-    editor_abilities_info:     'La somme doit être égale à 3 × niveau du personnage.',
-    editor_section_jobs:       'Métiers',
-    editor_section_blessings:  'Bénédictions',
-    editor_section_recipes:    'Recettes',
-    editor_item_name_ph:       'Nom',
-    editor_item_desc_ph:       'Description…',
-    editor_item_score_lbl:     'Niveau',
-    editor_add_job:            '+ Ajouter un métier',
-    editor_add_blessing:       '+ Ajouter une bénédiction',
-    editor_add_recipe:         '+ Ajouter une recette',
-    editor_section_background: 'Historique',
+    // Éditeur — compétences
+    editor_section_skills:    'Compétences',
+    editor_skill_name_ph:     'Nom de la compétence',
+    editor_skill_score_hint:  'Shift+clic : ±10',
+    editor_add_skill:         '+ Ajouter une compétence',
+
+    // Éditeur — traits
+    editor_section_traits:    'Traits',
+    editor_trait_name_ph:     'Nom du trait',
+    editor_trait_detail_ph:   'Description ou détail (optionnel)',
+    editor_trait_score_hint:  'Valeur (optionnel)',
+    editor_add_trait:         '+ Ajouter un trait',
+
+    // Éditeur — background
+    editor_section_background: 'Background',
     editor_background_ph:      'Histoire du personnage, origines, motivations…',
 
     // Alertes
-    alert_char_no_name: 'Donnez un nom au personnage.',
+    alert_char_no_name:  'Veuillez donner un nom au personnage.',
+    alert_trigram_3:     'Le trigramme doit faire exactement 3 lettres.',
   },
+
   en: {
-    ability_for: 'STR', ability_dex: 'DEX', ability_con: 'CON',
-    ability_int: 'INT', ability_sag: 'WIS', ability_cha: 'CHA',
-    ability_for_full: 'Strength',     ability_dex_full: 'Dexterity',
-    ability_con_full: 'Constitution', ability_int_full: 'Intelligence',
-    ability_sag_full: 'Wisdom',       ability_cha_full: 'Charisma',
+    editor_field_subtitle:     'Title / Occupation',
+    editor_field_subtitle_ph:  'E.g. Warrior, Mage, Rogue…',
+    editor_field_race_class:   'Race / Class',
+    editor_field_race_class_ph:'E.g. Elf Ranger, Human Paladin…',
+    editor_field_level:        'Level',
 
-    card_level_label: 'Level',
+    card_level: 'Lv. ',
 
-    preview_section_abilities:  'Abilities',
-    preview_section_jobs:       'Jobs',
-    preview_section_blessings:  'Blessings',
-    preview_section_recipes:    'Recipes',
-    preview_section_background: 'Background',
+    section_characteristics: 'Characteristics',
+    section_skills:          'Skills',
+    section_traits:          'Traits',
+    section_background:      'Background',
 
-    abilities_budget_label: 'Points spent',
+    editor_section_characteristics:   'Characteristics',
+    editor_char_name_ph:              'Full name (e.g. Strength)',
+    editor_char_trigram_ph:           'TRI',
+    editor_char_score_label:          'Score',
+    editor_char_score_hint:           'Shift+click: ±10',
+    editor_add_characteristic:        '+ Add a characteristic',
 
-    editor_section_level:      'Level',
-    editor_section_abilities:  'Abilities',
-    editor_abilities_info:     'The sum must equal 3 × character level.',
-    editor_section_jobs:       'Jobs',
-    editor_section_blessings:  'Blessings',
-    editor_section_recipes:    'Recipes',
-    editor_item_name_ph:       'Name',
-    editor_item_desc_ph:       'Description…',
-    editor_item_score_lbl:     'Level',
-    editor_add_job:            '+ Add job',
-    editor_add_blessing:       '+ Add blessing',
-    editor_add_recipe:         '+ Add recipe',
+    editor_section_skills:    'Skills',
+    editor_skill_name_ph:     'Skill name',
+    editor_skill_score_hint:  'Shift+click: ±10',
+    editor_add_skill:         '+ Add a skill',
+
+    editor_section_traits:    'Traits',
+    editor_trait_name_ph:     'Trait name',
+    editor_trait_detail_ph:   'Description or detail (optional)',
+    editor_trait_score_hint:  'Value (optional)',
+    editor_add_trait:         '+ Add a trait',
+
     editor_section_background: 'Background',
     editor_background_ph:      'Character history, origins, motivations…',
 
-    alert_char_no_name: 'Please name the character.',
+    alert_char_no_name:  'Please give the character a name.',
+    alert_trigram_3:     'Trigram must be exactly 3 letters.',
   },
 };
 
