@@ -1,6 +1,6 @@
 # Le personnage
 
-# Création de personnage
+## Création de personnage
 
 ### Tirage des caractéristiques
 
