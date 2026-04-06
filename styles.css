@@ -684,7 +684,7 @@ html, body {
 }
 .preview-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-.preview-attrs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.preview-attrs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
 .preview-attr {
   background: var(--bg2); border: 1px solid var(--border);
   border-radius: 8px; padding: 14px 16px;
