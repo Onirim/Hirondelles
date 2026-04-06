@@ -14,9 +14,9 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 
 | Armes | Semi-lanceurs de sort | Lanceurs purs d'essence | Lanceurs purs de théurgie | Lanceurs purs de mentalisme | Lanceurs hybrides |
 | --- | --- | --- | --- | --- | --- |
-| Guerrier | Moine | Magicien | Clerc | Mentaliste | Sorcier |
-| Voleur | Ranger | Illusionniste | Animiste | Soigneur | Mystique |
-| Larron | Barde | Alchimiste | Guérisseur | Prophète | Astrologue |
+| Guerrier | Ranger | Magicien | Clerc | Mentaliste | Sorcier |
+| Voleur | Barde | Illusionniste | Animiste | Soigneur | Mystique |
+| Larron | *Sans Profession* | Alchimiste | Guérisseur | Prophète | Astrologue |
 
 ### Choisir la race du personnage
 
