@@ -5,9 +5,7 @@
 ### Tirage des caractéristiques
 
 Lancer 10 dés de 100 dans une première colonne, relancer tous les scores inférieurs à 20. Il s’agit de la colonne des temporaires.
-
 En face de chaque temporaire, effectuer un lancer de dé de 100, ils représentent les jets de potentielle.
-
 Enfin, annoncez au MJ la paire de scores pour chaque ligne (temporaire et jets de potentielles), le MJ croise cette information avec la table 15.1.1 (p38) et donnera la valeur potentielle à inscrire dans une troisième colonne.
 
 ### Choisir de la profession
@@ -21,9 +19,7 @@ En fonction de la race ou de l'ethnie choisie, notez les ajustements raciaux et 
 ### Répartir les caractéristiques
 
 Répartir les couples de temporaires et potentielles en prenant en compte les caractéristiques principales de la profession (voir ci-dessus). 
-
 Tout score de temporaire inférieur à 90 placé dans l’une de ces caractéristiques se transformera en 90. Utiliser le score du jet de potentiel (seconde colonne précédemment générée) pour en déduire la nouvelle potentielle via la table 15.1.1 (p38).
-
 Notez que seules les cinq premières caractéristiques permettent de définir les points de développements nécessaires à l’acquisition des compétences.
 
 ### Choisir le niveau de départ
@@ -49,11 +45,8 @@ Choisir les compétences principales à développer et dépenser les points de d
 ### Développer les compétences secondaires (optionnelles)
 
 De la même manière que pour les compétences principales, dépenser les points de développements du niveau 0 pour les compétences secondaires. 
-
 Pour aider à représenter l’historique des personnages, attribuer gratuitement 5 rangs à 3 compétences (généralement relatives aux compétences culturelles ou familiales).
-
-Effectuer les montées de niveau au-delà du niveau zéro
-
+Effectuer les montées de niveau au-delà du niveau zéro. 
 A ce stade, pour chaque niveau après le niveau 0 :
 
 - Effectuer un jet de progression de caractéristiques (uniquement à partir du niveau 2)
