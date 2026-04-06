@@ -50,6 +50,7 @@ function freshState() {
     characteristics:       buildDefaultCharacteristics(), // [{ id, name, trigram, score }]
     skills:                [],     // [{ id, name, score }]
     traits:                [],     // [{ id, name, score, detail }]
+    spell_lists:           [],     // [{ id, name, detail }]
     background:            '',
   };
 }
@@ -168,12 +169,26 @@ function renderCharSheet(data) {
         </div>`).join('')}
     </div>` : '';
 
+  // ── Listes de sorts ───────────────────────────────────────
+  const spellLists = data.spell_lists || [];
+  const spellListsHtml = spellLists.length ? `
+    <div class="preview-section-title">${t('section_spell_lists')}</div>
+    <div class="compl-preview">
+      ${spellLists.map(sp => `
+        <div class="compl-chip">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span>${esc(sp.name)}</span>
+          </div>
+          ${sp.detail ? `<div class="compl-detail">${esc(sp.detail)}</div>` : ''}
+        </div>`).join('')}
+    </div>` : '';
+
   // ── Background ────────────────────────────────────────────
   const bgHtml = data.background ? `
     <div class="preview-section-title">${t('section_background')}</div>
     <div class="background-preview">${esc(data.background)}</div>` : '';
 
-  return `${illusHtml}${headerHtml}${charsHtml}${skillsHtml}${traitsHtml}${bgHtml}`;
+  return `${illusHtml}${headerHtml}${charsHtml}${skillsHtml}${traitsHtml}${spellListsHtml}${bgHtml}`;
 }
 
 
@@ -197,6 +212,7 @@ const GAME_I18N = {
     section_characteristics: 'Caractéristiques',
     section_skills:          'Compétences',
     section_traits:          'Traits',
+    section_spell_lists:     'Listes de sorts',
     section_background:      'Background',
 
     // Éditeur — caractéristiques
@@ -220,6 +236,12 @@ const GAME_I18N = {
     editor_trait_score_hint:  'Valeur (optionnel)',
     editor_add_trait:         '+ Ajouter un trait',
 
+    // Éditeur — listes de sorts
+    editor_section_spell_lists:  'Listes de sorts',
+    editor_spell_list_name_ph:   'Nom de la liste de sorts',
+    editor_spell_list_detail_ph: 'Sorts, école, source…',
+    editor_add_spell_list:       '+ Ajouter une liste de sorts',
+
     // Éditeur — background
     editor_section_background: 'Background',
     editor_background_ph:      'Histoire du personnage, origines, motivations…',
@@ -241,6 +263,7 @@ const GAME_I18N = {
     section_characteristics: 'Characteristics',
     section_skills:          'Skills',
     section_traits:          'Traits',
+    section_spell_lists:     'Spell Lists',
     section_background:      'Background',
 
     editor_section_characteristics:   'Characteristics',
@@ -260,6 +283,11 @@ const GAME_I18N = {
     editor_trait_detail_ph:   'Description or detail (optional)',
     editor_trait_score_hint:  'Value (optional)',
     editor_add_trait:         '+ Add a trait',
+
+    editor_section_spell_lists:  'Spell Lists',
+    editor_spell_list_name_ph:   'Spell list name',
+    editor_spell_list_detail_ph: 'Spells, school, source…',
+    editor_add_spell_list:       '+ Add a spell list',
 
     editor_section_background: 'Background',
     editor_background_ph:      'Character history, origins, motivations…',
