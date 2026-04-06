@@ -15,6 +15,24 @@ const GAME_SUBTITLE = 'Gestionnaire de campagne';
 
 // ── 2. ÉTAT INITIAL D'UN PERSONNAGE ──────────────────────────
 
+const DEFAULT_CHARACTERISTICS = [
+  { name: 'Force',        trigram: 'FOR', score: 0 },
+  { name: 'Dextérité',    trigram: 'DEX', score: 0 },
+  { name: 'Constitution', trigram: 'CON', score: 0 },
+  { name: 'Intelligence', trigram: 'INT', score: 0 },
+  { name: 'Sagesse',      trigram: 'SAG', score: 0 },
+  { name: 'Charisme',     trigram: 'CHA', score: 0 },
+];
+
+function buildDefaultCharacteristics() {
+  return DEFAULT_CHARACTERISTICS.map(ch => ({
+    id: _uid(),
+    name: ch.name,
+    trigram: ch.trigram,
+    score: ch.score,
+  }));
+}
+
 function freshState() {
   return {
     name:                  '',
@@ -25,7 +43,7 @@ function freshState() {
     illustration_url:      '',
     illustration_position: 0,
     tags:                  [],
-    characteristics:       [],     // [{ id, name, trigram, score }]
+    characteristics:       buildDefaultCharacteristics(), // [{ id, name, trigram, score }]
     skills:                [],     // [{ id, name, score }]
     traits:                [],     // [{ id, name, score, detail }]
     background:            '',
