@@ -115,3 +115,20 @@ Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter l
 | | | Direction de sort | AG |
 
 ## Compétences secondaires
+| Compétences | Caracs. | Compétences | Caracs. | Compétences | Caracs.
+| --- | --- | --- | --- | --- | --- |
+| Acrobaties | AG/RP | Falsification | AD/RS | Nav. à la rame | AD/FO
+| Assomer | AG/RP | Flècherie | AG/AD | Pistage | IT/RS |
+| Chant | PR/IT | Forge | FO/AG | Prem. soins | AD/EM
+| Comédie | PR/EM | Glisse | AG/AD | Repér. étoiles | IT/ME
+| Commerce | RS/EM | Jeu | ME/PR | Scupture | AG/EM |
+| Com. signaux | ME/AD | Maîtr. cordes | ME/AG | Séduction | EM/PR |
+| Const. pièges | RS/EM | Maîtr. sorts | var. | Soin d'animaux | EM/RS |
+| Contorsions | AG/AD | Marine | EM/IT | Spéléologie | AD/RS |
+| Cuisine | IT/RS | Maths | RS/ME | Survie nature | IT/ME |
+| Culbutes | AG/AD | Météo | IT/EM | Taille des pierres | AD/AG |
+| Danse | AG/IT | Musique | AG/EM | Trav. du cuir | AG/RS |
+| Eloq. en public | EM/PR | Orientation | RS/IT | Troupeaux | EM/PR
+| Trucages | PR/RP | Conn. de la rue | IT/PR | Savoir général | ME/RS |
+| Savoir magique | ME/RS | Savoir obscur | ME/RS | Savoir technique | ME/RS |
+| Travail du bois | AG/EM | 
