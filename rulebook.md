@@ -56,7 +56,7 @@ L’âge du personnage peut faire varier son niveau de départ, voir la table su
 
 | Âge |	Années |	Niveau |
 | --- | --- | --- |
-| Enfant |	7 à 12 ans |	0 |
+| Pré-adolescent |	7 à 12 ans |	0 |
 | Adolescent |	13 à 17 ans |	1 |
 | Jeune adulte |	18 à 25 ans |	2 |
 | Adulte |	26 à 39 ans |	3 |
@@ -66,15 +66,31 @@ L’âge du personnage peut faire varier son niveau de départ, voir la table su
 
 Les valeurs temporaires des 5 premières caractéristiques déterminent le nombre de points de développement que le personnage aura à disposition pour acheter ses compétences à chaque niveau.
 
-### Développer les compétences principales
+### Développer les compétences d'adolescence
 
 Choisir les compétences principales à développer et dépenser les points de développement pour le niveau 0. 
 
-### Développer les compétences secondaires (optionnelles)
+| Compétences | Caracs. | Compétences | Caracs. | Compétences | Caracs.
+| --- | --- | --- | --- | --- | --- |
+| **Manoeuvres en armure** |  | **Générales** | | **Spéciales** |
+| Cuir souple | AG/FO | Escalade | AG | Embuscade | - |
+| Cuir rigide | AG/FO | Natation | AG | Linguistique | - |
+| Mailles | AG/FO | Equitation | EM/AG | Mouvements adrénaux | Var. |
+| Plate | AG/FO | Désarmement de pièges | IT/AG | Défense adrénale | - |
+| **Compétences aux armes** | | Crochetage | IT/AG | Arts martiaux frappes | FO/FO/AG |
+| Tranchantes 1 main | FO/FO/AG | Filature/dissimulation | AG/AD |  Arts martiaux projections | AG/AG/FO |
+| Contondantes 1 main | FO/FO/AG | Perception | IT/RS | Développement corporel | CO |
+| A deux mains | FO/FO/AG | **Magie** | | 
+| Arcs & arbalètes | AG/AG/FO | Listes de sorts | Carac. Pouvoir |
+| Armes de jet | FO/AG | Runes | EM/IT |
+| Armes d'hast | FO/FO/AG | Concordance | EM/IT |
+| | | Transmission | IT |
+| | | Direction de sort | AG |
 
-De la même manière que pour les compétences principales, dépenser les points de développements du niveau 0 pour les compétences secondaires. 
-Pour aider à représenter l’historique des personnages, attribuer gratuitement 5 rangs à 3 compétences (généralement relatives aux compétences culturelles ou familiales).
-Effectuer les montées de niveau au-delà du niveau zéro. 
+Optionel : De la même manière que pour les compétences principales, dépenser les points de développements du niveau 0 pour les compétences secondaires. 
+Pour aider à représenter l’historique des personnages, attribuer gratuitement 5 rangs à 2 compétences secondaires (généralement relatives aux compétences culturelles ou familiales).
+
+### Effectuer les montées de niveau au-delà du niveau zéro. 
 A ce stade, pour chaque niveau après le niveau 0 :
 
 - Effectuer un jet de progression de caractéristiques (uniquement à partir du niveau 2)
