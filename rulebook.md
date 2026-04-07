@@ -102,11 +102,11 @@ Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter l
 | **Manoeuvres en armure** |  | **Générales** | | **Spéciales** |
 | Cuir souple | AG/FO | Escalade | AG | Embuscade | - |
 | Cuir rigide | AG/FO | Natation | AG | Linguistique | - |
-| Mailles | AG/FO | Equitation | EM/AG | Mouvements adrénaux | Var. |
-| Plate | AG/FO | Désarmement de pièges | IT/AG | Défense adrénale | - |
-| **Compétences aux armes** | | Crochetage | IT/AG | Arts martiaux frappes | FO/FO/AG |
-| Tranchantes 1 main | FO/FO/AG | Filature/dissimulation | AG/AD |  Arts martiaux projections | AG/AG/FO |
-| Contondantes 1 main | FO/FO/AG | Perception | IT/RS | Développement corporel | CO |
+| Mailles | AG/FO | Equitation | EM/AG | Arts martiaux frappes | FO/FO/AG |
+| Plate | AG/FO | Désarmement de pièges | IT/AG | Arts martiaux projections | AG/AG/FO |
+| **Compétences aux armes** | | Crochetage | IT/AG |  Développement corporel | CO |
+| Tranchantes 1 main | FO/FO/AG | Filature/dissimulation | AG/AD | 
+| Contondantes 1 main | FO/FO/AG | Perception | IT/RS |
 | A deux mains | FO/FO/AG | **Magie** | | 
 | Arcs & arbalètes | AG/AG/FO | Listes de sorts | Carac. Pouvoir |
 | Armes de jet | FO/AG | Runes | EM/IT |
@@ -120,7 +120,7 @@ Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter l
 | Acrobaties | AG/RP | Falsification | AD/RS | Nav. à la rame | AD/FO
 | Assomer | AG/RP | Flècherie | AG/AD | Pistage | IT/RS |
 | Chant | PR/IT | Forge | FO/AG | Prem. soins | AD/EM
-| Comédie | PR/EM | Glisse | AG/AD | Repér. étoiles | IT/ME
+| Comédie | PR/EM | Glisse | AG/AD | Repér. aux étoiles | IT/ME
 | Commerce | RS/EM | Jeu | ME/PR | Scupture | AG/EM |
 | Com. signaux | ME/AD | Maîtr. cordes | ME/AG | Séduction | EM/PR |
 | Const. pièges | RS/EM | Maîtr. sorts | var. | Soin d'animaux | EM/RS |
@@ -132,3 +132,26 @@ Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter l
 | Trucages | PR/RP | Conn. de la rue | IT/PR | Savoir général | ME/RS |
 | Savoir magique | ME/RS | Savoir obscur | ME/RS | Savoir technique | ME/RS |
 | Travail du bois | AG/EM | 
+
+## Catégories de compétences
+| Catégorie | Compétences |
+| --- | --- |
+| *Manoeuvres en armure* | Cuir souple, Cuir rigide, Mailles, Plate |
+| *Artistiques* | Comédie, Danse, Musique, Chant |
+| *Athlétiques* | Acrobaties, Escalade, Contorsions, Glisse, Nav. a la rame, Natation, Culbutes |
+| *Perceptions* | Perception, Pistage |
+| *Développement corporel* | Développement corporel |
+| *Manoeuvres de combat* | Assomer |
+| *Communications* | Linguistique, Com. signaux |
+| *Artisanats* | Cuisine, Flècherie, Travail du cuir, Maîtrise des cordes, Forge, Taille des pierres, Constr. pièges, Travail du bois |
+| *Direction de sort* | Direction de sorts |
+| *Influence* | Eloq. en public, Séduction, Commerce |
+| *Savoir* | Savoir général, Savoir magique, Savoir obscur, Savoir technique |
+| *Arts martiaux* | Arts martiaux frappes, Arts martiaux projections |
+| *Extérieur* | Soin des animaux, Spéléologie, Survie nature, Troupeaux, Repér. aux étoiles, Météo |
+| *Magiques* | Transmission, Concordance, Runes, Maîtr. des sorts |
+| *Sciences* | Maths |
+| *Sorts* | Bonus aux lancements de sorts de base |
+| *Subterfuge* | Embuscade, Désarmement de pièges, Falsification, Crochetage, Filature/dissimulation, Trucages |
+| *Techniques* | Premiers soins, Jeu, Navigation, Marine |
+| *Armes* | Tranchantes 1 main, Contondantes 1 main, A deux mains, Arcs & Arbalètes, Armes de jet, Armes d'hast |
