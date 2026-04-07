@@ -65,10 +65,37 @@ L’âge du personnage peut faire varier son niveau de départ, voir la table su
 ### Détermination des points de développement
 
 Les valeurs temporaires des 5 premières caractéristiques déterminent le nombre de points de développement que le personnage aura à disposition pour acheter ses compétences à chaque niveau.
+Des points de développements secondaires sont également attribués, à hauteur de 50% des points de développements principaux. 
+Les points de développements secondaires ne peuvent permettre que d'acheter des compétences secondaires. 
+Il est cependant possible d'acheter des rangs de compétences secondaires avec des points de développement principaux.
 
-### Développer les compétences d'adolescence
+### Développement des compétences d'adolescence
 
 Choisir les compétences principales à développer et dépenser les points de développement pour le niveau 0. 
+
+Optionel : De la même manière que pour les compétences principales, dépenser les points de développements du niveau 0 pour les compétences secondaires. 
+Pour aider à représenter l’historique des personnages, attribuer gratuitement 5 rangs à 2 compétences secondaires (généralement relatives aux compétences culturelles ou familiales).
+
+### Effectuer les montées de niveau au-delà du niveau zéro. 
+A ce stade, pour chaque niveau après le niveau 0 :
+
+- Effectuer un jet de progression de caractéristiques (uniquement à partir du niveau 2)
+- Dépenser les points de développement principaux
+- Dépenser les points de développement secondaires
+
+### Ajout des bonus de profession
+
+En fonction de la profession du personnage et de son niveau, notez sur la fiche les bonus de professions pour les compétences éligibles.
+
+### Complétion des détails techniques
+
+Calculez les valeurs de compétences, PP (temporaire de pouvoir /10) + (niveau x PP/Niv), les PdC (base + Rangs x PdC/Rang), la base de mouvement, la valeur d’encombrement.
+
+### Achat de l’équipement
+
+Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter leur matériel. Une liste de paquetages est disponible pour accélérer le processus.
+
+## Compétences principales
 
 | Compétences | Caracs. | Compétences | Caracs. | Compétences | Caracs.
 | --- | --- | --- | --- | --- | --- |
@@ -87,24 +114,4 @@ Choisir les compétences principales à développer et dépenser les points de d
 | | | Transmission | IT |
 | | | Direction de sort | AG |
 
-Optionel : De la même manière que pour les compétences principales, dépenser les points de développements du niveau 0 pour les compétences secondaires. 
-Pour aider à représenter l’historique des personnages, attribuer gratuitement 5 rangs à 2 compétences secondaires (généralement relatives aux compétences culturelles ou familiales).
-
-### Effectuer les montées de niveau au-delà du niveau zéro. 
-A ce stade, pour chaque niveau après le niveau 0 :
-
-- Effectuer un jet de progression de caractéristiques (uniquement à partir du niveau 2)
-- Dépenser les points de développement principaux
-- Dépenser les points de développement secondaires
-
-### Ajouter les bonus de profession
-
-En fonction de la profession du personnage et de son niveau, notez sur la fiche les bonus de professions pour les compétences éligibles.
-
-### Compléter les détails techniques
-
-Calculez les valeurs de compétences, PP (temporaire de pouvoir /10) + (niveau x PP/Niv), les PdC (base + Rangs x PdC/Rang), la base de mouvement, la valeur d’encombrement.
-
-### Acheter l’équipement
-
-Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter leur matériel. Une liste de paquetages est disponible pour accélérer le processus.
+## Compétences secondaires
