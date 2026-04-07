@@ -33,6 +33,23 @@ Répartir les couples de temporaires et potentielles en prenant en compte les ca
 Tout score de temporaire ou de potentielle inférieur à 90 placé dans l’une de ces caractéristiques se transformera en 90.
 Prenez en compte que seules les cinq premières caractéristiques permettent de définir les points de développements nécessaires à l’acquisition des compétences.
 
+| Temporaire | Bonus | Points de développement | Points de pouvoir |
+| --- | --- | --- | --- |
+| 100 | +25 | 10 | 3 |
+| 98-99 | +20 | 9 | 2 |
+| 95-97 | +15 | 9 | 2 |
+| 90-94 | +10 | 8 | 1 |
+| 85-89 | +5 | 8 | 1 |
+| 75-84 | +5 | 7 | 1 |
+| 60-74 | 0 | 6 | 0 |
+| 40-59 | 0 | 5 | 0 |
+| 25-39 | 0 | 4 | 0 |
+| 15-24 | -5 | 3 | 0 |
+| 10-14 | -5 | 2 | 0 |
+| 5-9 | -10 | 2 | 0 |
+| 3-4 | -15 | 1 | 0 |
+| 2 | -20 | 1 | 0 |
+
 ### Choix du niveau de départ
 
 L’âge du personnage peut faire varier son niveau de départ, voir la table suivante pour les humains.
