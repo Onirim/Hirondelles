@@ -15,7 +15,7 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 - [Larron](https://onirim.github.io/Hirondelles/#doc/E0AA7ED4)
 - [Magicien](https://onirim.github.io/Hirondelles/#doc/160986C4)
 - [Animiste](https://onirim.github.io/Hirondelles/#doc/5ED4E8C5)
-- Sorceleur (Maison)
+- [Sorceleur](https://onirim.github.io/Hirondelles/#doc/355BCFEE)
 
 
 ### Choix de la race
