@@ -25,10 +25,10 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 
 En fonction de la race choisie, notez les ajustements raciaux et les bonus aux caractéristiques,  ainsi que le taux de récupération. La taille et le poids du personnage doivent être définis à ce stade. Choisir deux langues de départ à (7/0).
 
-- Humain
-- Sorceleur
-- Elfe (Aen Seidhe)
-- Nain
+- [Humain](https://onirim.github.io/Hirondelles/#doc/27086476)
+- [Elfe (Aen Seidhe)](https://onirim.github.io/Hirondelles/#doc/F941E2EB)
+- [Nain](https://onirim.github.io/Hirondelles/#doc/1DA88554)
+- [Sorceleur](https://onirim.github.io/Hirondelles/#doc/0438D674)
 
 ### Répartir les caractéristiques
 
