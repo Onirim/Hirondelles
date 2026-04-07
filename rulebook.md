@@ -13,7 +13,7 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 - [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017)
 - [Voleur](https://onirim.github.io/Hirondelles/#doc/EA1DD03D)
 - [Larron](https://onirim.github.io/Hirondelles/#doc/E0AA7ED4)
-- Magicien
+- [Magicien](https://onirim.github.io/Hirondelles/#doc/160986C4)
 - Illusionniste
 - Sorceleur (Maison)
 
