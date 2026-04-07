@@ -118,7 +118,7 @@ Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter l
 | Compétences | Caracs. | Compétences | Caracs. | Compétences | Caracs.
 | --- | --- | --- | --- | --- | --- |
 | Acrobaties | AG/RP | Falsification | AD/RS | Nav. à la rame | AD/FO
-| Assomer | AG/RP | Flècherie | AG/AD | Pistage | IT/RS |
+| Inconscience | AG/RP | Flècherie | AG/AD | Pistage | IT/RS |
 | Chant | PR/IT | Forge | FO/AG | Prem. soins | AD/EM
 | Comédie | PR/EM | Glisse | AG/AD | Repér. aux étoiles | IT/ME
 | Commerce | RS/EM | Jeu | ME/PR | Scupture | AG/EM |
@@ -128,30 +128,21 @@ Les PJ commencent généralement avec 1d100+50 pièces d’argent pour acheter l
 | Cuisine | IT/RS | Maths | RS/ME | Survie nature | IT/ME |
 | Culbutes | AG/AD | Météo | IT/EM | Taille des pierres | AD/AG |
 | Danse | AG/IT | Musique | AG/EM | Trav. du cuir | AG/RS |
-| Eloq. en public | EM/PR | Orientation | RS/IT | Troupeaux | EM/PR
+| Eloq. en public | EM/PR | Navigation | RS/IT | Troupeaux | EM/PR
 | Trucages | PR/RP | Conn. de la rue | IT/PR | Savoir général | ME/RS |
 | Savoir magique | ME/RS | Savoir obscur | ME/RS | Savoir technique | ME/RS |
-| Travail du bois | AG/EM | 
+| Travail du bois | AG/EM | Désarmement | AG |
 
-## Catégories de compétences
-| Catégorie | Compétences |
+## Bonus de profession
+les personnages obtiennent un bonus de profession à chaque niveau, jusqu'au niveau 20 inclus. Ce bonus s'applique à toutes les compétences liées aux catégories suivantes ainsi qu'à certains autres jets.
+| Catégorie | Compétences ou détails|
 | --- | --- |
-| *Manoeuvres en armure* | Cuir souple, Cuir rigide, Mailles, Plate |
-| *Artistiques* | Comédie, Danse, Musique, Chant |
-| *Athlétiques* | Acrobaties, Escalade, Contorsions, Glisse, Nav. a la rame, Natation, Culbutes |
-| *Perceptions* | Perception, Pistage |
-| *Développement corporel* | Développement corporel |
-| *Manoeuvres de combat* | Assomer |
-| *Communications* | Linguistique, Com. signaux |
-| *Artisanats* | Cuisine, Flècherie, Travail du cuir, Maîtrise des cordes, Forge, Taille des pierres, Constr. pièges, Travail du bois |
 | *Direction de sort* | Direction de sorts |
-| *Influence* | Eloq. en public, Séduction, Commerce |
-| *Savoir* | Savoir général, Savoir magique, Savoir obscur, Savoir technique |
-| *Arts martiaux* | Arts martiaux frappes, Arts martiaux projections |
-| *Extérieur* | Soin des animaux, Spéléologie, Survie nature, Troupeaux, Repér. aux étoiles, Météo |
-| *Magiques* | Transmission, Concordance, Runes, Maîtr. des sorts |
-| *Sciences* | Maths |
-| *Sorts* | Bonus aux lancements de sorts de base |
-| *Subterfuge* | Embuscade, Désarmement de pièges, Falsification, Crochetage, Filature/dissimulation, Trucages |
-| *Techniques* | Premiers soins, Jeu, Navigation, Marine |
-| *Armes* | Tranchantes 1 main, Contondantes 1 main, A deux mains, Arcs & Arbalètes, Armes de jet, Armes d'hast |
+| *Développement corporel* | Bonus à la valeur de PdC/Rang |
+| *Lancement de sorts de base* | Bonus au lancement de sorts de base
+| *Académiques* | Météo, Navigation, Repérage aux étoiles, Savoir obscur, Savoir technique, Savoir général |
+| *Combat* | Arts martiaux, Compétences d'armes, Désarmement, Inconscience, Manoeuvres en armure |
+| *Extérieur* | Equitation, Spéléologie, Survie nature, Troupeaux |
+| *Générales* | Cuisine, Taille de la pierre, Travail du bois, Flècherie, Forge, Maîtrise de la corde, Travail du cuir, Sculpture |
+| *Linguistiques* | Chant, Commerce, Com. par signaux, Eloqu. en public, Musique |
+| *Magiques* | 
