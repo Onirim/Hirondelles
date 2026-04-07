@@ -11,11 +11,9 @@ Enfin, annoncez au MJ la paire de scores pour chaque ligne (temporaire et jets d
 ### Choisir de la profession
 
 Choisir une des professions disponibles et notez les deux caractéristiques principales. 
-- Guerrier
+- [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017)
 - Voleur
 - Larron
-- Archer (EA #12)
-- Eclaireur (EA #12)
 - Magicien
 - Illusionniste
 - Sorceleur (Maison)
