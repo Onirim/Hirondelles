@@ -4,11 +4,10 @@
 
 ### Tirage des caractéristiques
 
-Lancer 10 dés de 100 dans une première colonne, relancer tous les scores inférieurs à 20. Il s’agit de la colonne des temporaires.
-En face de chaque temporaire, effectuer un lancer de dé de 100, ils représentent les jets de potentielle.
-Enfin, annoncez au MJ la paire de scores pour chaque ligne (temporaire et jets de potentielles), le MJ croise cette information avec la table 15.1.1 (p38) et donnera la valeur potentielle à inscrire dans une troisième colonne.
+Lancez 1d100 trois fois : ignorez le score le plus bas, le second score est la caractéristique temporaire, le troisième est la caractéristique potentielle.
+Faites cela 10 fois pour obtenir 10 couples de temporaires et potentielles.
 
-### Choisir de la profession
+### Choix de la profession
 
 Choisir une des professions disponibles et notez les deux caractéristiques principales. 
 - [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017)
@@ -19,7 +18,7 @@ Choisir une des professions disponibles et notez les deux caractéristiques prin
 - Sorceleur (Maison)
 
 
-### Choisir la race du personnage
+### Choix de la race
 
 En fonction de la race choisie, notez les ajustements raciaux et les bonus aux caractéristiques,  ainsi que le taux de récupération. La taille et le poids du personnage doivent être définis à ce stade. Choisir deux langues de départ à (7/0).
 
@@ -28,13 +27,13 @@ En fonction de la race choisie, notez les ajustements raciaux et les bonus aux c
 - [Nain](https://onirim.github.io/Hirondelles/#doc/1DA88554)
 - [Sorceleur](https://onirim.github.io/Hirondelles/#doc/0438D674)
 
-### Répartir les caractéristiques
+### Répartition des caractéristiques
 
 Répartir les couples de temporaires et potentielles en prenant en compte les caractéristiques principales de la profession (voir ci-dessus). 
-Tout score de temporaire inférieur à 90 placé dans l’une de ces caractéristiques se transformera en 90. Utiliser le score du jet de potentiel (seconde colonne précédemment générée) pour en déduire la nouvelle potentielle via la table 15.1.1 (p38).
-Notez que seules les cinq premières caractéristiques permettent de définir les points de développements nécessaires à l’acquisition des compétences.
+Tout score de temporaire ou de potentielle inférieur à 90 placé dans l’une de ces caractéristiques se transformera en 90.
+Prenez en compte que seules les cinq premières caractéristiques permettent de définir les points de développements nécessaires à l’acquisition des compétences.
 
-### Choisir le niveau de départ
+### Choix du niveau de départ
 
 L’âge du personnage peut faire varier son niveau de départ, voir la table suivante pour les humains.
 
@@ -46,7 +45,7 @@ L’âge du personnage peut faire varier son niveau de départ, voir la table su
 | Adulte |	26 à 39 ans |	3 |
 | Vétéran	| 40 ans et plus |	4 |
 
-### Déterminer les points de développement
+### Détermination des points de développement
 
 Les valeurs temporaires des 5 premières caractéristiques déterminent le nombre de points de développement que le personnage aura à disposition pour acheter ses compétences à chaque niveau.
 
