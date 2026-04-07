@@ -10,12 +10,12 @@ Faites cela 10 fois pour obtenir 10 couples de temporaires et potentielles.
 ### Choix de la profession
 
 Choisir une des professions disponibles et notez les deux caractéristiques principales. 
-- [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017)
-- [Voleur](https://onirim.github.io/Hirondelles/#doc/EA1DD03D)
-- [Larron](https://onirim.github.io/Hirondelles/#doc/E0AA7ED4)
-- [Magicien](https://onirim.github.io/Hirondelles/#doc/160986C4)
-- [Animiste](https://onirim.github.io/Hirondelles/#doc/5ED4E8C5)
-- [Sorceleur](https://onirim.github.io/Hirondelles/#doc/355BCFEE)
+- Guerrier
+- Voleur
+- Larron
+- Magicien (ou Illusionniste ou Alchimiste)
+- Animiste
+- Sorceleur
 
 
 ### Choix de la race
