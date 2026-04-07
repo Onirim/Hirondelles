@@ -12,7 +12,7 @@ Enfin, annoncez au MJ la paire de scores pour chaque ligne (temporaire et jets d
 
 Choisir une des professions disponibles et notez les deux caractéristiques principales. 
 - [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017)
-- Voleur
+- [Voleur](https://onirim.github.io/Hirondelles/#doc/EA1DD03D)
 - Larron
 - Magicien
 - Illusionniste
