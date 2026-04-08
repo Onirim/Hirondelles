@@ -58,7 +58,14 @@ Un test statique est une action ou une manoeuvre qui ne dépend pas d'un déplac
 Les tests ou manoeuvres en mouvement sont gérées via une table qui peut indiquer soit le pourcentage de réussite de l'activité, soit un échec et un incident lié au mouvement (une chute par exemple). Elle est souvent utilisée pour ce qui a trait à l'escalade. Tant que le personnage n'a pas atteint les 100% de son activité, elle est considérée comme incomplète. Par exemple un personnage qui esclade une falaise de 20 mètres peut se retrouver après 3 rounds d'escalade à 70% de réussite, impliquant qu'il se trouve actuellement à 14 mètres de hauteur.
 
 ## Le combat
-Dans Rolemaster, le combat est à la fois simple et détaillé.
+Dans Rolemaster, le combat est à la fois simple et détaillé et fonctionne par phase. Un tour de combat représente 10 secondes et chaque tour est découpé en phases.
+1. Phase des sorts (on déclare les préparations de sorts et on résout les effets)
+2. Phase de tir A (les personnages n'ayant pas lancé de sort peuvent tirer durant cette phase, et les effets sont résolu simultanément)
+3. Phase de mouvement (les personnages peuvent se déplacer à hauteur de leur vitesse de déplacement, de manière simultanée)
+4. Phase de tir B (les personnages n'ayant ni lancé de sort ni tiré durant la phase de tir A peuvent tirer durant cette phase, et les effets sont résolus simultanément)
+5. Phase de mêlée (les personnages n'ayant ni lancé de sort ni tiré durant les phases de tir A ou B peuvent attaquer, les effets sont résolus simultanément)
+
+*Pour le combat, nous considérons qu'un personnage possède une action de base et une action de mouvement à chaque round. Lancer un sort, tirer ou combattre coûtent une action de base, et se déplacer en phase 3 coûte l'action de mouvement.*
 
 ## La magie
 Les règles de base de Rolemaster sont utilisées, avec les jets d'acquisition de listes de sorts et les jets d'échecs exceptionnels.
