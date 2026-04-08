@@ -1,69 +1,41 @@
 # Rolemaster 2nd édition
 La campagne des Hirondelles est jouée avec Rolemaster, édité par Ion Crown Enterprises à partir de 1980. 
 Le système de jeu colle particulièrement bien au Witcher, apportant un réalisme saisissant aux combats et de la profondeur aux personnages sans alourdir le jeu en séance. 
-En contrepartie, beaucoup de travail est effectué en amont lors de la création des personnages et au cours de leurs montées de niveaux.
+En contrepartie, beaucoup de détails sont traités en amont lors de la création des personnages et au cours de leurs montées de niveaux.
 
 ## Création de personnage
-
-### Tirage des caractéristiques
-
-Lancez 1d100 trois fois : ignorez le score le plus bas, le second score est la caractéristique temporaire, le troisième est la caractéristique potentielle.
-Faites cela 10 fois pour obtenir 10 couples de temporaires et potentielles.
+La création de personnage suit les procédures standard de Rolemaster 2nd édition.
 
 ### Choix de la profession
 
-Choisir une des professions disponibles et notez les deux caractéristiques principales. 
-- Guerrier
-- Voleur
-- Larron
-- Magicien (ou Illusionniste ou Alchimiste)
-- Animiste
-- Sorceleur
-
+Les professions disponibles pour la campagne sont les suivantes :
+| Royaume des armes | Utilisateurs de sorts | Semi-utilisateurs de sorts |
+| --- | --- | --- |
+| Guerrier | Magicien | Sorceleur |
+| Voleur | Illusionniste | 
+| Larron | Alchimiste |
+| | Animiste |
 
 ### Choix de la race
 
-En fonction de la race choisie, notez les ajustements raciaux et les bonus aux caractéristiques,  ainsi que le taux de récupération. La taille et le poids du personnage doivent être définis à ce stade. Choisir deux langues de départ à (7/0).
+Les règles concernant les races du jeu sont spécifiques à la campagne et sont disponibles dans la section documents du site. Choisir deux langues de départ à 7 (parlé) / 0 (écrit).
 
 - [Humain](https://onirim.github.io/Hirondelles/#doc/27086476)
 - [Elfe (Aen Seidhe)](https://onirim.github.io/Hirondelles/#doc/F941E2EB)
 - [Nain](https://onirim.github.io/Hirondelles/#doc/1DA88554)
 - [Sorceleur](https://onirim.github.io/Hirondelles/#doc/0438D674)
 
-### Répartition des caractéristiques
-
-Répartir les couples de temporaires et potentielles en prenant en compte les caractéristiques principales de la profession (voir ci-dessus). 
-Tout score de temporaire ou de potentielle inférieur à 90 placé dans l’une de ces caractéristiques se transformera en 90.
-Prenez en compte que seules les cinq premières caractéristiques permettent de définir les points de développements nécessaires à l’acquisition des compétences.
-
-| Temporaire | Bonus | Points de développement | Points de pouvoir |
-| --- | --- | --- | --- |
-| 100 | +25 | 10 | 3 |
-| 98-99 | +20 | 9 | 2 |
-| 95-97 | +15 | 9 | 2 |
-| 90-94 | +10 | 8 | 1 |
-| 85-89 | +5 | 8 | 1 |
-| 75-84 | +5 | 7 | 1 |
-| 60-74 | 0 | 6 | 0 |
-| 40-59 | 0 | 5 | 0 |
-| 25-39 | 0 | 4 | 0 |
-| 15-24 | -5 | 3 | 0 |
-| 10-14 | -5 | 2 | 0 |
-| 5-9 | -10 | 2 | 0 |
-| 3-4 | -15 | 1 | 0 |
-| 2 | -20 | 1 | 0 |
-
 ### Choix du niveau de départ
 
 L’âge du personnage peut faire varier son niveau de départ, voir la table suivante pour les humains.
 
-| Âge |	Années |	Niveau |
-| --- | --- | --- |
-| Pré-adolescent |	7 à 12 ans |	0 |
-| Adolescent |	13 à 17 ans |	1 |
-| Jeune adulte |	18 à 25 ans |	2 |
-| Adulte |	26 à 39 ans |	3 |
-| Vétéran	| 40 ans et plus |	4 |
+| Niveau | Période |	Âge humain |	Âge elfe | Âge nain | Âge sorceleur |
+| --- | --- | --- | --- | --- | --- |
+| 0 | Pré-adolescent |	7-12 |	7-50 | 
+| 1 | Adolescent |	13-17 |	
+| 2 | Jeune adulte |	18-25 
+| 3 |Adulte |	26-39 |	
+| 4 |Vétéran	| 40+ |	
 
 ### Détermination des points de développement
 
