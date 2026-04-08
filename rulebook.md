@@ -42,6 +42,11 @@ Les règles concernant les races du jeu sont spécifiques à la campagne et sont
 ### Compétences secondaires
 Chaque personnage obtient un nombre de points de développements secondaires égaux à 50% des points de développement principaux, qu'il ne peut utiliser que pour les compétences secondaires.
 
+### Equipement de départ
+Chaque personnage commence avec 1d100+50 pièces d'argent pour s'équiper.
+- *Les membres du royaume des armes commencent avec une arme de qualité +5*
+- *Les utilisateurs et semi-utilisateurs commencent avec un additionneur de sort +1*
+
 ## Les tests
 Dans Rolemaster, la plupart des tests sont résolu en lançant 1d100 et en y ajoutant le score d'une compétence. 76 est une réussite partielle, et 101 est une réussite complète.
 Les jets de dés sont généralement sans limites, un jet de 1-5 indiquant qu'il faut relancer le dé et retrancher le résultat obtenu au premier lancer. A l'inverse, un jet de 96-100 permet de relancer le dé et d'additionner le nouveau score obtenu.
