@@ -1,4 +1,7 @@
-# Le personnage
+# Rolemaster 2nd édition
+La campagne des Hirondelles est jouée avec Rolemaster, édité par Ion Crown Enterprises à partir de 1980. 
+Le système de jeu colle particulièrement bien au Witcher, apportant un réalisme saisissant aux combats et de la profondeur aux personnages sans alourdir le jeu en séance. 
+En contrepartie, beaucoup de travail est effectué en amont lors de la création des personnages et au cours de leurs montées de niveaux.
 
 ## Création de personnage
 
