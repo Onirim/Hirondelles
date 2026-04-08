@@ -101,6 +101,7 @@ function renderCharCardBody(c) {
 // ══════════════════════════════════════════════════════════════
 
 function renderCharSheet(data) {
+  const hideDetailedSections = true;
 
   // ── Illustration ──────────────────────────────────────────
   const illusHtml = data.illustration_url
@@ -129,7 +130,7 @@ function renderCharSheet(data) {
 
   // ── Caractéristiques (toutes, sans limite) ─────────────────
   const chars = data.characteristics || [];
-  const charsHtml = chars.length ? `
+  const charsHtml = !hideDetailedSections && chars.length ? `
     <div class="preview-section-title">${t('section_characteristics')}</div>
     <div class="preview-attrs">
       ${chars.map(ch => `
@@ -142,7 +143,7 @@ function renderCharSheet(data) {
 
   // ── Compétences ───────────────────────────────────────────
   const skills = data.skills || [];
-  const skillsHtml = skills.length ? `
+  const skillsHtml = !hideDetailedSections && skills.length ? `
     <div class="preview-section-title">${t('section_skills')}</div>
     <div class="apt-preview-grid">
       ${skills.map(sk => `
@@ -154,7 +155,7 @@ function renderCharSheet(data) {
 
   // ── Traits (sans type, juste nom + score + description) ───
   const traits = data.traits || [];
-  const traitsHtml = traits.length ? `
+  const traitsHtml = !hideDetailedSections && traits.length ? `
     <div class="preview-section-title">${t('section_traits')}</div>
     <div class="compl-preview">
       ${traits.map(tr => `
@@ -171,7 +172,7 @@ function renderCharSheet(data) {
 
   // ── Listes de sorts ───────────────────────────────────────
   const spellLists = data.spell_lists || [];
-  const spellListsHtml = spellLists.length ? `
+  const spellListsHtml = !hideDetailedSections && spellLists.length ? `
     <div class="preview-section-title">${t('section_spell_lists')}</div>
     <div class="compl-preview">
       ${spellLists.map(sp => `
