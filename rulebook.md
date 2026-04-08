@@ -11,9 +11,9 @@ La création de personnage suit les procédures standard de Rolemaster 2nd édit
 Les professions disponibles pour la campagne sont les suivantes :
 | Royaume des armes | Utilisateurs de sorts | Semi-utilisateurs de sorts |
 | --- | --- | --- |
-| Guerrier | Magicien | Sorceleur |
-| Voleur | Illusionniste | 
-| Larron | Animiste |
+| [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017) | [Magicien](https://onirim.github.io/Hirondelles/#doc/160986C4) | [Sorceleur](https://onirim.github.io/Hirondelles/#doc/355BCFEE) |
+| Voleur | [Animiste](https://onirim.github.io/Hirondelles/#doc/5ED4E8C5) | 
+| [Larron](https://onirim.github.io/Hirondelles/#doc/E0AA7ED4) | 
 
 ### Choix de la race
 
@@ -46,5 +46,9 @@ Un test statique est une action ou une manoeuvre qui ne dépend pas d'un déplac
 ### Tests en mouvement
 Les tests ou manoeuvres en mouvement sont gérées via une table qui peut indiquer soit le pourcentage de réussite de l'activité, soit un échec et un incident lié au mouvement (une chute par exemple). Elle est souvent utilisée pour ce qui a trait à l'escalade. Tant que le personnage n'a pas atteint les 100% de son activité, elle est considérée comme incomplète. Par exemple un personnage qui esclade une falaise de 20 mètres peut se retrouver après 3 rounds d'escalade à 70% de réussite, impliquant qu'il se trouve actuellement à 14 mètres de hauteur.
 
-### Le combat
+## Le combat
 Dans Rolemaster, le combat est à la fois simple et détaillé.
+
+## La magie
+Les règles de base de Rolemaster sont utilisées, avec les jets d'acquisition de listes de sorts et les jets d'échecs exceptionnels.
+Un personnage dôté d'un minimum de pouvoir (donc possédant des Points de Pouvoirs grâce à une caractéristique élevée) peut donc théoriquement apprendre à manipuler la magie (en pratique, il lui faudra beaucoup de chance pour réussir à apprendre une portion de liste A (niveau 1 à 5).
