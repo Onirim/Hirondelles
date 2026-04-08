@@ -15,6 +15,7 @@ Les professions disponibles pour la campagne sont les suivantes :
 | [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017) | [Magicien](https://onirim.github.io/Hirondelles/#doc/160986C4) | [Sorceleur](https://onirim.github.io/Hirondelles/#doc/355BCFEE) |
 | [Voleur](https://onirim.github.io/Hirondelles/#doc/EA1DD03D) | [Animiste](https://onirim.github.io/Hirondelles/#doc/5ED4E8C5) | 
 | [Larron](https://onirim.github.io/Hirondelles/#doc/E0AA7ED4) | 
+
 *Le sorceleur est une classe maison, voir le document approprié.*
 
 ### Choix de la race
