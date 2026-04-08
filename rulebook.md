@@ -18,7 +18,7 @@ Les professions disponibles pour la campagne sont les suivantes :
 
 ### Choix de la race
 
-Les règles concernant les races du jeu sont spécifiques à la campagne et sont disponibles dans la section documents du site. Choisir deux langues de départ à 7 (parlé) / 0 (écrit).
+Les règles concernant les races du jeu sont spécifiques à la campagne et sont disponibles dans la section documents du site (issues des Express Additions). Choisir deux langues de départ à 7 (parlé) / 0 (écrit).
 
 - [Humain](https://onirim.github.io/Hirondelles/#doc/27086476)
 - [Elfe (Aen Seidhe)](https://onirim.github.io/Hirondelles/#doc/F941E2EB)
@@ -31,11 +31,11 @@ L’âge du personnage peut faire varier son niveau de départ, voir la table su
 
 | Niveau | Période |	Âge humain |	Âge elfe | Âge nain | Âge sorceleur |
 | --- | --- | --- | --- | --- | --- |
-| 0 | Pré-adolescent |	7-12 |	7-50 | 
-| 1 | Adolescent |	13-17 |	
-| 2 | Jeune adulte |	18-25 
-| 3 |Adulte |	26-39 |	
-| 4 |Vétéran	| 40+ |	
+| 0 | Pré-adolescent |	7-12 |	7-14 | 7-19 | 7-14 |
+| 1 | Adolescent |	13-17 |	15-59 | 20-39 | 15-29 |
+| 2 | Jeune adulte |	18-25 | 40-89 | 50-69 | 30-44 |
+| 3 |Adulte |	26-39 |	100-199 | 90-139 | 45-89 |
+| 4 |Vétéran	| 40+ |	200+ | 140+ | 90+ |
 
 ### Détermination des points de développement
 
