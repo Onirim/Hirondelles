@@ -39,3 +39,12 @@ L’âge du personnage peut faire varier son niveau de départ, voir la table su
 ## Les tests
 Dans Rolemaster, la plupart des tests sont résolu en lançant 1d100 et en y ajoutant le score d'une compétence. 76 est une réussite partielle, et 101 est une réussite complète.
 Les jets de dés sont généralement sans limites, un jet de 1-5 indiquant qu'il faut relancer le dé et retrancher le résultat obtenu au premier lancer. A l'inverse, un jet de 96-100 permet de relancer le dé et d'additionner le nouveau score obtenu.
+
+### Tests statiques
+Un test statique est une action ou une manoeuvre qui ne dépend pas d'un déplacement. En général, il faut obtenir 101+ sur le test pour le réussir du premier coup. Un résultat de 76+ n'est qu'une réussite partielle : soit une réussite avec un désavantage, soit une demi-réussite qui nécessite une autre demi-réussite le round suivant pour être complétée.
+
+### Tests en mouvement
+Les tests ou manoeuvres en mouvement sont gérées via une table qui peut indiquer soit le pourcentage de réussite de l'activité, soit un échec et un incident lié au mouvement (une chute par exemple). Elle est souvent utilisée pour ce qui a trait à l'escalade. Tant que le personnage n'a pas atteint les 100% de son activité, elle est considérée comme incomplète. Par exemple un personnage qui esclade une falaise de 20 mètres peut se retrouver après 3 rounds d'escalade à 70% de réussite, impliquant qu'il se trouve actuellement à 14 mètres de hauteur.
+
+### Le combat
+Dans Rolemaster, le combat est à la fois simple et détaillé.
