@@ -402,6 +402,17 @@
             data-i18n="editor_add_spell_list">+ Ajouter une liste de sorts</button>
         </div>
       
+        <!-- Description -->
+        <div class="form-section">
+          <div class="form-section-title" data-i18n="editor_section_description">Description</div>
+          <div class="background-field">
+            <textarea id="f-description"
+              data-i18n="editor_description_ph" data-i18n-attr="placeholder"
+              placeholder="Description du personnage, apparence, attitude…"
+              oninput="state.description=this.value;updatePreview()"></textarea>
+          </div>
+        </div>
+
         <!-- Background -->
         <div class="form-section">
           <div class="form-section-title" data-i18n="editor_section_background">Background</div>

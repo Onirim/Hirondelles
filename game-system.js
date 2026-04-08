@@ -51,6 +51,7 @@ function freshState() {
     skills:                [],     // [{ id, name, score }]
     traits:                [],     // [{ id, name, score, detail }]
     spell_lists:           [],     // [{ id, name, score, detail }]
+    description:           '',
     background:            '',
   };
 }
@@ -78,11 +79,11 @@ function renderCharCardBody(c) {
   const lvlTag = c.level !== undefined && c.level !== 0 && c.level !== null
     ? `<span class="card-rank">${t('card_level')}${c.level}</span>` : '';
 
-  // Extrait du background (tronqué)
-  const rawBackground = String(c.background || '').replace(/\s+/g, ' ').trim();
-  const maxBackgroundLength = 180;
-  const backgroundExcerpt = rawBackground
-    ? rawBackground.slice(0, maxBackgroundLength).trimEnd() + (rawBackground.length > maxBackgroundLength ? '…' : '')
+  // Extrait de la description (tronqué)
+  const rawDescription = String(c.description || '').replace(/\s+/g, ' ').trim();
+  const maxDescriptionLength = 180;
+  const descriptionExcerpt = rawDescription
+    ? rawDescription.slice(0, maxDescriptionLength).trimEnd() + (rawDescription.length > maxDescriptionLength ? '…' : '')
     : '';
 
   return `
@@ -91,7 +92,7 @@ function renderCharCardBody(c) {
     <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">
       ${rcTag}${lvlTag}
     </div>
-    ${backgroundExcerpt ? `<div class="card-sub" style="margin-top:6px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">${esc(backgroundExcerpt)}</div>` : ''}
+    ${descriptionExcerpt ? `<div class="card-sub" style="margin-top:6px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">${esc(descriptionExcerpt)}</div>` : ''}
   `;
 }
 
@@ -187,12 +188,17 @@ function renderCharSheet(data) {
         </div>`).join('')}
     </div>` : '';
 
+  // ── Description ───────────────────────────────────────────
+  const descriptionHtml = data.description ? `
+    <div class="preview-section-title">${t('section_description')}</div>
+    <div class="background-preview">${esc(data.description)}</div>` : '';
+
   // ── Background ────────────────────────────────────────────
   const bgHtml = data.background ? `
     <div class="preview-section-title">${t('section_background')}</div>
     <div class="background-preview">${esc(data.background)}</div>` : '';
 
-  return `${illusHtml}${headerHtml}${charsHtml}${skillsHtml}${traitsHtml}${spellListsHtml}${bgHtml}`;
+  return `${illusHtml}${headerHtml}${charsHtml}${skillsHtml}${traitsHtml}${spellListsHtml}${descriptionHtml}${bgHtml}`;
 }
 
 
@@ -217,6 +223,7 @@ const GAME_I18N = {
     section_skills:          'Compétences',
     section_traits:          'Traits',
     section_spell_lists:     'Listes de sorts',
+    section_description:     'Description',
     section_background:      'Background',
 
     // Éditeur — caractéristiques
@@ -247,6 +254,8 @@ const GAME_I18N = {
     editor_add_spell_list:       '+ Ajouter une liste de sorts',
 
     // Éditeur — background
+    editor_section_description: 'Description',
+    editor_description_ph:      'Description du personnage, apparence, attitude…',
     editor_section_background: 'Background',
     editor_background_ph:      'Histoire du personnage, origines, motivations…',
 
@@ -268,6 +277,7 @@ const GAME_I18N = {
     section_skills:          'Skills',
     section_traits:          'Traits',
     section_spell_lists:     'Spell Lists',
+    section_description:     'Description',
     section_background:      'Background',
 
     editor_section_characteristics:   'Characteristics',
@@ -293,6 +303,8 @@ const GAME_I18N = {
     editor_spell_list_detail_ph: 'Spells, school, source…',
     editor_add_spell_list:       '+ Add a spell list',
 
+    editor_section_description: 'Description',
+    editor_description_ph:      'Character description, appearance, attitude…',
     editor_section_background: 'Background',
     editor_background_ph:      'Character history, origins, motivations…',
 

@@ -125,7 +125,7 @@ function freshState() {
     name: '', subtitle: '', level: 1,
     strength: 10, dexterity: 10, intelligence: 10,
     is_public: false, illustration_url: '', illustration_position: 0,
-    tags: [], background: '',
+    tags: [], description: '', background: '',
   };
 }
 
