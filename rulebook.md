@@ -2,6 +2,7 @@
 La campagne des Hirondelles est jouée avec Rolemaster, édité par Ion Crown Enterprises à partir de 1980. 
 Le système de jeu colle particulièrement bien au Witcher, apportant un réalisme saisissant aux combats et de la profondeur aux personnages sans alourdir le jeu en séance. 
 En contrepartie, beaucoup de détails sont traités en amont lors de la création des personnages et au cours de leurs montées de niveaux.
+*Les règles maison seront indiquées de cette façon.*
 
 ## Création de personnage
 La création de personnage suit les procédures standard de Rolemaster 2nd édition.
@@ -14,6 +15,7 @@ Les professions disponibles pour la campagne sont les suivantes :
 | [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017) | [Magicien](https://onirim.github.io/Hirondelles/#doc/160986C4) | [Sorceleur](https://onirim.github.io/Hirondelles/#doc/355BCFEE) |
 | [Voleur](https://onirim.github.io/Hirondelles/#doc/EA1DD03D) | [Animiste](https://onirim.github.io/Hirondelles/#doc/5ED4E8C5) | 
 | [Larron](https://onirim.github.io/Hirondelles/#doc/E0AA7ED4) | 
+*Le sorceleur est une classe maison, voir le document approprié.*
 
 ### Choix de la race
 
@@ -26,7 +28,7 @@ Les règles concernant les races du jeu sont spécifiques à la campagne et sont
 
 ### Choix du niveau de départ
 
-L’âge du personnage peut faire varier son niveau de départ, voir la table suivante pour les humains.
+*L’âge du personnage peut faire varier son niveau de départ, voir la table suivante pour les humains.*
 
 | Niveau | Période |	Âge humain |	Âge elfe | Âge nain | Âge sorceleur |
 | --- | --- | --- | --- | --- | --- |
@@ -35,6 +37,9 @@ L’âge du personnage peut faire varier son niveau de départ, voir la table su
 | 2 | Jeune adulte |	18-25 | 40-89 | 50-69 | 30-44 |
 | 3 |Adulte |	26-39 |	100-199 | 90-139 | 45-89 |
 | 4 |Vétéran	| 40+ |	200+ | 140+ | 90+ |
+
+### Compétences secondaires
+Chaque personnage obtient un nombre de points de développements secondaires égaux à 50% des points de développement principaux, qu'il ne peut utiliser que pour les compétences secondaires.
 
 ## Les tests
 Dans Rolemaster, la plupart des tests sont résolu en lançant 1d100 et en y ajoutant le score d'une compétence. 76 est une réussite partielle, et 101 est une réussite complète.
