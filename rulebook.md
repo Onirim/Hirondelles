@@ -13,8 +13,7 @@ Les professions disponibles pour la campagne sont les suivantes :
 | --- | --- | --- |
 | Guerrier | Magicien | Sorceleur |
 | Voleur | Illusionniste | 
-| Larron | Alchimiste |
-| | Animiste |
+| Larron | Animiste |
 
 ### Choix de la race
 
