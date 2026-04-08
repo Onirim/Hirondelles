@@ -12,7 +12,7 @@ Les professions disponibles pour la campagne sont les suivantes :
 | Royaume des armes | Utilisateurs de sorts | Semi-utilisateurs de sorts |
 | --- | --- | --- |
 | [Guerrier](https://onirim.github.io/Hirondelles/#doc/E0AB1017) | [Magicien](https://onirim.github.io/Hirondelles/#doc/160986C4) | [Sorceleur](https://onirim.github.io/Hirondelles/#doc/355BCFEE) |
-| Voleur | [Animiste](https://onirim.github.io/Hirondelles/#doc/5ED4E8C5) | 
+| [Voleur](https://onirim.github.io/Hirondelles/#doc/EA1DD03D) | [Animiste](https://onirim.github.io/Hirondelles/#doc/5ED4E8C5) | 
 | [Larron](https://onirim.github.io/Hirondelles/#doc/E0AA7ED4) | 
 
 ### Choix de la race
