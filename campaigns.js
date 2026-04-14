@@ -13,7 +13,7 @@ let editingCampaignId  = null;
 let campaignState      = null;
 
 // Sélection en cours dans l'éditeur : sets de share_codes par type
-let campaignSelection  = { char: new Set(), chr: new Set(), doc: new Set() };
+let campaignSelection  = { char: new Set(), chr: new Set(), doc: new Set(), map: new Set() };
 
 // ── Modale de chargement sync ─────────────────────────────────
 function showSyncModal() {
@@ -130,6 +130,7 @@ async function syncFollowedCampaignItems() {
   const toFollowChar = [];
   const toFollowChr  = [];
   const toFollowDoc  = [];
+  const toFollowMap  = [];
  
   for (const item of items) {
     if (item.item_type === 'char') {
@@ -144,6 +145,8 @@ async function syncFollowedCampaignItems() {
       const alreadyOwn      = Object.values(documents).some(d => d.share_code === item.share_code);
       const alreadyFollowed = Object.values(followedDocuments).some(d => d.share_code === item.share_code);
       if (!alreadyOwn && !alreadyFollowed) toFollowDoc.push(item.share_code);
+    } else if (item.item_type === 'map') {
+      toFollowMap.push(item.share_code);
     }
   }
  
@@ -210,6 +213,11 @@ async function syncFollowedCampaignItems() {
       await loadDocTagsFromDB();
     }
   }
+  
+  if (toFollowMap.length && typeof syncFollowedMapLayers === 'function') {
+    const mapAdded = await syncFollowedMapLayers(toFollowMap);
+    newlyFollowed += mapAdded;
+  }
  
   if (newlyFollowed > 0) {
     showToast(ti('toast_campaign_synced', { n: newlyFollowed }));
@@ -266,6 +274,7 @@ async function saveCampaignItemsToDB(campaignId) {
     ...([...campaignSelection.char].map(c => `char:${c}`)),
     ...([...campaignSelection.chr ].map(c => `chr:${c}`)),
     ...([...campaignSelection.doc ].map(c => `doc:${c}`)),
+    ...([...campaignSelection.map ].map(c => `map:${c}`)),
   ]);
 
   const toAdd    = [...selectedSet].filter(k => !existingSet.has(k));
@@ -400,6 +409,7 @@ function campaignCardHTML(id, c, isFollowed) {
   const charCount = (campaignItems[id] || []).filter(i => i.item_type === 'char').length;
   const chrCount  = (campaignItems[id] || []).filter(i => i.item_type === 'chr').length;
   const docCount  = (campaignItems[id] || []).filter(i => i.item_type === 'doc').length;
+  const mapCount  = (campaignItems[id] || []).filter(i => i.item_type === 'map').length;
 
   const desc = c.description
     ? (c.description.length > 200 ? c.description.slice(0, 200) + '…' : c.description)
@@ -410,6 +420,7 @@ function campaignCardHTML(id, c, isFollowed) {
       ${charCount ? `<span class="campaign-count-chip"><span class="n">${charCount}</span> ${t('campaign_type_char')}</span>` : ''}
       ${chrCount  ? `<span class="campaign-count-chip"><span class="n">${chrCount}</span> ${t('campaign_type_chr')}</span>` : ''}
       ${docCount  ? `<span class="campaign-count-chip"><span class="n">${docCount}</span> ${t('campaign_type_doc')}</span>` : ''}
+      ${mapCount  ? `<span class="campaign-count-chip"><span class="n">${mapCount}</span> ${t('campaign_type_map')}</span>` : ''}
       ${!itemCount ? `<span class="campaign-count-chip" style="font-style:italic">${t('campaign_empty_items')}</span>` : ''}
     </div>`;
 
@@ -481,6 +492,8 @@ function renderCampaignDetail() {
   if (!c) return;
   const isOwn = !!campaigns[activeCampaignId];
   const items = campaignItems[activeCampaignId] || [];
+  const mapSources = getCampaignMapSources();
+  const mapConfigByKey = new Map((MAP_CONFIG?.maps || []).map(m => [m.key, m]));
 
   // Résolution des noms à partir des stores en mémoire
   const resolve = (item) => {
@@ -492,10 +505,15 @@ function renderCampaignDetail() {
       const found = Object.values(chronicles).find(x => x.share_code === item.share_code)
                  || Object.values(followedChronicles).find(x => x.share_code === item.share_code);
       return { name: found?.title || item.share_code, sub: '' };
-    } else {
+    } else if (item.item_type === 'doc'){
       const found = Object.values(documents).find(x => x.share_code === item.share_code)
                  || Object.values(followedDocuments).find(x => x.share_code === item.share_code);
       return { name: found?.title || item.share_code, sub: '' };
+    } else {
+      const found = mapSources.own.find(x => x.share_code === item.share_code)
+                 || mapSources.followed.find(x => x.share_code === item.share_code);
+      const mapName = found?.map_key ? (mapConfigByKey.get(found.map_key)?.name || found.map_key) : '';
+      return { name: found?.title || mapName || item.share_code, sub: mapName };
     }
   };
 
@@ -569,6 +587,7 @@ function renderCampaignDetail() {
       ${renderSection('char', 'campaign_type_char', 'campaign-item-type-char')}
       ${renderSection('chr',  'campaign_type_chr',  'campaign-item-type-chr')}
       ${renderSection('doc',  'campaign_type_doc',  'campaign-item-type-doc')}
+      ${renderSection('map',  'campaign_type_map',  'campaign-item-type-map')}
     </div>`;
 }
 
@@ -577,6 +596,7 @@ function navigateToCampaignItem(type, shareCode) {
   if (type === 'char') navigateToChar(shareCode);
   else if (type === 'chr') navigateToChr(shareCode);
   else if (type === 'doc') navigateToDoc(shareCode);
+  else if (type === 'map' && typeof navigateToMap === 'function') navigateToMap(shareCode);
 }
 
 async function removeItemFromCampaign(campaignId, itemId) {
@@ -593,7 +613,7 @@ async function removeItemFromCampaign(campaignId, itemId) {
 function newCampaign() {
   editingCampaignId = null;
   campaignState = { title: '', description: '', is_public: false, share_code: null };
-  campaignSelection = { char: new Set(), chr: new Set(), doc: new Set() };
+  campaignSelection = { char: new Set(), chr: new Set(), doc: new Set(), map: new Set() };
   showView('campaign-editor');
   renderCampaignEditor();
 }
@@ -604,7 +624,7 @@ async function openCampaignEditor(id) {
   // Charge les items existants et pré-remplit la sélection
   await loadCampaignItems(id);
   const items = campaignItems[id] || [];
-  campaignSelection = { char: new Set(), chr: new Set(), doc: new Set() };
+  campaignSelection = { char: new Set(), chr: new Set(), doc: new Set(), map: new Set() };
   items.forEach(item => campaignSelection[item.item_type]?.add(item.share_code));
   showView('campaign-editor');
   renderCampaignEditor();
@@ -696,6 +716,7 @@ function renderSelectableItems() {
   renderSelectableSection('char', document.getElementById('campaign-selector-chars'));
   renderSelectableSection('chr',  document.getElementById('campaign-selector-chrs'));
   renderSelectableSection('doc',  document.getElementById('campaign-selector-docs'));
+  renderSelectableSection('map',  document.getElementById('campaign-selector-maps'));
 }
 
 function renderSelectableSection(type, container) {
@@ -766,7 +787,8 @@ function renderSelectionSummary() {
   const charN = campaignSelection.char.size;
   const chrN  = campaignSelection.chr.size;
   const docN  = campaignSelection.doc.size;
-  const total = charN + chrN + docN;
+  const mapN  = campaignSelection.map.size;
+  const total = charN + chrN + docN + mapN;
 
   const summaryEl = document.getElementById('campaign-selection-summary');
   if (!summaryEl) return;
@@ -784,6 +806,7 @@ function renderSelectionSummary() {
     charN ? `<span class="campaign-summary-chip campaign-item-type-char">${charN} ${t('campaign_type_char')}</span>` : '',
     chrN  ? `<span class="campaign-summary-chip campaign-item-type-chr">${chrN} ${t('campaign_type_chr')}</span>` : '',
     docN  ? `<span class="campaign-summary-chip campaign-item-type-doc">${docN} ${t('campaign_type_doc')}</span>` : '',
+    mapN  ? `<span class="campaign-summary-chip campaign-item-type-map">${mapN} ${t('campaign_type_map')}</span>` : '',
   ].join('');
   summaryEl.querySelector('.summary-chips').innerHTML = chips;
 }
