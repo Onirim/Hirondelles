@@ -17,7 +17,7 @@ const MAP_CONFIG = {
     {
       key:         'default',              // ← identifiant unique, ne pas changer si données existantes
       name:        'Royaumes du Nord',     // ← nom affiché dans le sélecteur
-      image:       './maps/witcher_map.jpeg',
+      image:       './pictures/witcher_map.jpeg',
       imageWidth:  2894,
       imageHeight: 4096,
     },
