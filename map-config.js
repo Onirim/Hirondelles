@@ -16,10 +16,10 @@ const MAP_CONFIG = {
   maps: [
     {
       key:         'default',              // ← identifiant unique, ne pas changer si données existantes
-      name:        'Galaxy Map',     // ← nom affiché dans le sélecteur
-      image:       '/Camply/pictures/galaxy-regions-pretty.jpg',
-      imageWidth:  4500,
-      imageHeight: 4500,
+      name:        'Royaumes du Nord',     // ← nom affiché dans le sélecteur
+      image:       './maps/witcher_map.jpeg',
+      imageWidth:  2894,
+      imageHeight: 4096,
     },
     // Décommentez et remplissez pour ajouter d'autres cartes :
     //{
